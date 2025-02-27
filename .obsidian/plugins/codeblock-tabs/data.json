@@ -3,7 +3,7 @@
     "dataview": true,
     "dataviewjs": true,
     "python": true,
-    "node.js": false
+    "node.js": true
   },
   "defaultTitle": "(x)"
 }
