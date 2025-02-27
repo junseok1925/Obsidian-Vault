@@ -1,0 +1,9 @@
+{
+  "extraLang": {
+    "dataview": true,
+    "dataviewjs": true,
+    "python": true,
+    "node.js": false
+  },
+  "defaultTitle": "(x)"
+}
