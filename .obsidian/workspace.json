@@ -171,6 +171,11 @@
   },
   "active": "fb7948ad542f51b8",
   "lastOpenFiles": [
+    "Chat_Bot/text_to_csv_converter.py",
+    "Chat_Bot/text_embadding.py",
+    "Chat_Bot/scraped.csv",
+    "Chat_Bot/data.txt",
+    "Chat_Bot/chatgpt_test.py",
     "SioT & Gasi 세미나.md",
     "GEOMEX 교육.md",
     "README.md",
