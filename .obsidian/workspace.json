@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chat_Bot/chat_bot.md",
+                "file": "Chat_Bot/text_to_csv_converter.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "chat_bot"
+              "title": "text_to_csv_converter"
             }
           }
         ]
@@ -41,7 +41,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": true
               },
               "icon": "lucide-folder-closed",
               "title": "파일 탐색기"
@@ -171,15 +171,18 @@
   },
   "active": "fb7948ad542f51b8",
   "lastOpenFiles": [
+    "Chat_Bot/text_embadding.md",
+    "Chat_Bot/chatgpt_test.md",
+    "Chat_Bot/chat_bot.md",
+    "Chat_Bot/text_to_csv_converter.md",
+    "GEOMEX 교육.md",
     "Chat_Bot/text_to_csv_converter.py",
     "Chat_Bot/text_embadding.py",
     "Chat_Bot/scraped.csv",
     "Chat_Bot/data.txt",
     "Chat_Bot/chatgpt_test.py",
     "SioT & Gasi 세미나.md",
-    "GEOMEX 교육.md",
     "README.md",
-    "Chat_Bot/chat_bot.md",
     "Chat_Bot",
     "무제 파일.md",
     "무제.md",
