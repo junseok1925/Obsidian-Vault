@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chat_Bot/text_to_csv_converter.md",
+                "file": "SioT & Gasi 세미나.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "text_to_csv_converter"
+              "title": "SioT & Gasi 세미나"
             }
           },
           {
@@ -27,16 +27,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chat_Bot/text_embadding.py.md",
+                "file": "SioT & Gasi 세미나.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "text_embadding.py"
+              "title": "SioT & Gasi 세미나"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -184,13 +183,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "20b5c2895a430b1f",
+  "active": "fb7948ad542f51b8",
   "lastOpenFiles": [
+    "Chat_Bot/text_to_csv_converter.md",
     "SioT & Gasi 세미나.md",
     "Chat_Bot/text_embadding.py.md",
     "Chat_Bot/chat_GPT_test.py.md",
     "Chat_Bot/chatgpt_test.md",
-    "Chat_Bot/text_to_csv_converter.md",
     "Chat_Bot/chat_bot.md",
     "GEOMEX 교육.md",
     "Chat_Bot/text_to_csv_converter.py",
