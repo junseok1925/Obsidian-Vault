@@ -22,6 +22,18 @@
             }
           },
           {
+            "id": "cb6c187a096ea84a",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.9"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.9"
+            }
+          },
+          {
             "id": "20b5c2895a430b1f",
             "type": "leaf",
             "state": {
@@ -35,7 +47,8 @@
               "title": "SioT & Gasi 세미나"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -183,7 +196,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "fb7948ad542f51b8",
+  "active": "cb6c187a096ea84a",
   "lastOpenFiles": [
     "Chat_Bot/text_to_csv_converter.md",
     "SioT & Gasi 세미나.md",
