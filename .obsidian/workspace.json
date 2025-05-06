@@ -56,7 +56,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": true
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "파일 탐색기"
@@ -184,7 +184,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "20b5c2895a430b1f",
+  "active": "128038d9a921b4cb",
   "lastOpenFiles": [
     "Chat_Bot/chat_GPT_test.py.md",
     "Chat_Bot/chat_bot.md",
