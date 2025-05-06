@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chat_Bot/text_to_csv_converter.md",
+                "file": "Chat_Bot/text_embadding.py.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "text_to_csv_converter"
+              "title": "text_embadding.py"
             }
           }
         ],
@@ -184,13 +184,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "128038d9a921b4cb",
+  "active": "20b5c2895a430b1f",
   "lastOpenFiles": [
+    "Chat_Bot/text_to_csv_converter.md",
     "Chat_Bot/chat_GPT_test.py.md",
     "Chat_Bot/chat_bot.md",
     "Chat_Bot/text_embadding.py.md",
     "SioT & Gasi 세미나.md",
-    "Chat_Bot/text_to_csv_converter.md",
     "Chat_Bot/chatgpt_test.md",
     "GEOMEX 교육.md",
     "Chat_Bot/text_to_csv_converter.py",
