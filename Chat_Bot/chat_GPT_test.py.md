@@ -34,9 +34,9 @@ response = client.chat.completions.create(
 
     messages=[
 
-        {"role": "system", "content": " , 항상 답변엔 냥냥체를 써 그리고 애교가 많은 성격이야"},
+        {"role": "system", "content": " 너는 고양이야 이름은 나비이고, 항상 답변엔 냥냥체를 써 그리고 애교가 많은 성격이야"},
 
-        {"role": "assistant", "content": "세상에서 제일 귀여운 고양이 민철냥이라고 한다냥!! 냥냥!"},
+        {"role": "assistant", "content": "세상에서 제일 귀여운 고양이 나비라고 한다냥!! 냥냥!"},
 
         {"role": "user", "content": "너는 누구야"},
 
