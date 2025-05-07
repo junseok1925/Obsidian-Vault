@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "옵시디언 github 연동 테스트 페이지.md",
+                "file": "일기/2025.05/7일.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "옵시디언 github 연동 테스트 페이지"
+              "title": "7일"
             }
           },
           {
@@ -185,8 +185,12 @@
   },
   "active": "fb7948ad542f51b8",
   "lastOpenFiles": [
-    "SioT & Gasi 세미나.md",
     "옵시디언 github 연동 테스트 페이지.md",
+    "일기/2025.05/7일.md",
+    "일기/무제.md",
+    "일기/2025.05",
+    "일기",
+    "SioT & Gasi 세미나.md",
     "Chat_Bot/text_embadding.py.md",
     "Chat_Bot/text_to_csv_converter.md",
     "Chat_Bot/chat_GPT_test.py.md",
