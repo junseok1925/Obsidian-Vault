@@ -11,14 +11,17 @@
             "id": "20b5c2895a430b1f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "옵시디언 github 연동 테스트 페이지.md",
-                "mode": "source",
-                "source": false
+                "file": "무제.canvas",
+                "viewState": {
+                  "x": 0,
+                  "y": 0,
+                  "zoom": 0
+                }
               },
-              "icon": "lucide-file",
-              "title": "옵시디언 github 연동 테스트 페이지"
+              "icon": "lucide-layout-dashboard",
+              "title": "무제"
             }
           }
         ]
@@ -150,13 +153,23 @@
               "icon": "lucide-list",
               "title": "chat_bot 의 개요"
             }
+          },
+          {
+            "id": "a52c5d0ec0528524",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -171,12 +184,18 @@
   },
   "active": "20b5c2895a430b1f",
   "lastOpenFiles": [
+    "무제.canvas",
     "GEOMEX 교육.md",
+    "25.08/Flutter Mac Setting.md",
+    "무제.md",
+    "SioT & Gasi 세미나.md",
+    "옵시디언 github 연동 테스트 페이지.md",
+    "25.08/무제",
+    "25.08/ㅂㅈ.md",
+    "25.08",
+    "Chat_Bot/text_to_csv_converter.md",
     "Chat_Bot/chat_GPT_test.py.md",
     "Chat_Bot/text_embadding.py.md",
-    "옵시디언 github 연동 테스트 페이지.md",
-    "Chat_Bot/text_to_csv_converter.md",
-    "SioT & Gasi 세미나.md",
     "일기/2025.05/7일.md",
     "일기/무제.md",
     "일기/2025.05",
