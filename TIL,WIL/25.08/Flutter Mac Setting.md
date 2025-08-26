@@ -58,4 +58,4 @@ Doctor summary (to see all details, run flutter doctor -v):
 
 확인 후 다시 `flutter doctor` 입력으로 무결점 확인 후 완료.
 
-내일은 VScode 플러그인 환경 설정 예정...
+내일은 VScode 플러그인 환경 설정 예정..
