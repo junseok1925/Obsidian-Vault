@@ -37,12 +37,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIL,WIL/25.08/Flutter Mac Setting.md",
+                "file": "TIL,WIL/25.08/무제.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Flutter Mac Setting"
+              "title": "무제"
             }
           }
         ],
@@ -208,9 +208,10 @@
   },
   "active": "18ea7a7b8595fd8e",
   "lastOpenFiles": [
+    "TIL,WIL/25.08/Flutter Mac Setting.md",
+    "TIL,WIL/25.08/무제.md",
     "README.md",
     "TIL,WIL/25.08/Why Flutter.md",
-    "TIL,WIL/25.08/Flutter Mac Setting.md",
     "SioT & Gasi 세미나.md",
     "옵시디언 github 연동 테스트 페이지.md",
     "image.png",
