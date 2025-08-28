@@ -44,21 +44,9 @@
               "icon": "lucide-file",
               "title": "Flutter Mac Setting"
             }
-          },
-          {
-            "id": "84095fe703917f63",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.9.12"
-              },
-              "icon": "lucide-book-up",
-              "title": "릴리즈 노트 1.9.12"
-            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -218,7 +206,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "84095fe703917f63",
+  "active": "18ea7a7b8595fd8e",
   "lastOpenFiles": [
     "README.md",
     "TIL,WIL/25.08/Why Flutter.md",
