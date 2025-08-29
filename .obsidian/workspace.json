@@ -23,12 +23,14 @@
             "id": "3a88322aac0b29eb",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "image 1.png"
+                "file": "TIL,WIL/25.08/Memory-matching-game App.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "image 1"
+              "icon": "lucide-file",
+              "title": "Memory-matching-game App"
             }
           },
           {
@@ -46,7 +48,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -206,19 +208,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "18ea7a7b8595fd8e",
+  "active": "3a88322aac0b29eb",
   "lastOpenFiles": [
+    "TIL,WIL/25.08/Flutter Mac Setting.md",
     "TIL,WIL/25.08/Flutter project open, VS code Extenion plugin.md",
+    "image 1.png",
+    "image 2.png",
     "TIL,WIL/25.08/Memory-matching-game App.md",
     "Pasted image 20250828174901.png",
-    "TIL,WIL/25.08/Flutter Mac Setting.md",
     "README.md",
     "TIL,WIL/25.08/Why Flutter.md",
     "SioT & Gasi 세미나.md",
     "옵시디언 github 연동 테스트 페이지.md",
     "image.png",
-    "image 1.png",
-    "image 2.png",
     "TIL,WIL",
     "GEOMEX 교육.md",
     "무제.canvas",
