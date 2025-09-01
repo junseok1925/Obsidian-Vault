@@ -94,3 +94,4 @@ class _CardBoardsState extends State<CardBoards> {
 }
 ```
 
+카드 클릭시 `onTapCard` 함수 실행 됨
