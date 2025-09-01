@@ -25,12 +25,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIL,WIL/25.08/Memory-matching-game App.md",
+                "file": "TIL,WIL/25.08/Memory-matching-game App (동기, 비동기).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Memory-matching-game App"
+              "title": "Memory-matching-game App (동기, 비동기)"
             }
           },
           {
@@ -105,7 +105,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 470.5
   },
   "right": {
     "id": "7afe4a8a56070175",
@@ -210,11 +210,12 @@
   },
   "active": "3a88322aac0b29eb",
   "lastOpenFiles": [
+    "TIL,WIL/25.08/Memory-matching-game App (조건문).md",
+    "TIL,WIL/25.08/Memory-matching-game App (동기, 비동기).md",
     "TIL,WIL/25.08/Flutter Mac Setting.md",
     "TIL,WIL/25.08/Flutter project open, VS code Extenion plugin.md",
     "image 1.png",
     "image 2.png",
-    "TIL,WIL/25.08/Memory-matching-game App.md",
     "Pasted image 20250828174901.png",
     "README.md",
     "TIL,WIL/25.08/Why Flutter.md",
