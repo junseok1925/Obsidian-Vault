@@ -94,4 +94,35 @@ class _CardBoardsState extends State<CardBoards> {
 }
 ```
 
-카드 클릭시 `onTapCard` 함수 실행 됨
+
+
+카드 클릭시 `onTapCard` 함수 실행
+1. 만약 첫번째 카드의 상태(instantFirstCard)가 -1, 즉 
+```dart
+void onTapCard(int cardIndex) {
+    print('$cardIndex 번째 카드를 선택함.');
+
+    if (instantFirstCard == -1) {
+      // 첫 번째 카드 선택
+      instantFirstCard = cardIndex;
+    } else {
+      // 두 번째 카드 선택 시 만약 짝이 안맞는 카드 일 경우
+      var firstCard = cards[instantFirstCard];
+      var secondCard = cards[cardIndex];
+
+      if (firstCard == secondCard) {
+        // 두 카드가 같으면 성공
+        print('짝이 맞는 카드입니다.');
+        instantFirstCard = -1; // 선택 초기화
+      } else {
+        // 다르면 1초 후에 다시 뒤집기
+        resetInstantCards(instantFirstCard, cardIndex);
+      }
+    }
+
+    // 선택된 카드를 앞면으로 뒤집음
+    setState(() {
+      cardsFlippedState[cardIndex] = true;
+    });
+  }
+```
