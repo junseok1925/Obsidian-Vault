@@ -97,7 +97,11 @@ class _CardBoardsState extends State<CardBoards> {
 
 
 카드 클릭시 `onTapCard` 함수 실행
-1. 만약 첫번째 카드의 상태(instantFirstCard)가 -1, 즉 
+1. 만약 첫번째 카드의 상태(instantFirstCard)가 -1, 즉 아직 첫 번째 카드를 고르지 않았다면.
+2. `instantFirstCard`의 값은 첫번째 고른 카드의 인덱스 값이 됨
+3. else 만약 `instantFirstCard`의 값이 -1이 아니면, 첫 번째로 고른 카드가 아니란 뜻으로 두 번째로 고른 카드임을 나타냄. 만약 두번째 카드 선택이라면 변수 `firstCard`의 값은 리스트 `card`의 값 중instantFirstCard`번째의 값이 되고, `secondCard`의 값은 리스트 `card`의 `cardIndex` 번째의 값이 됨
+4. 최종으로 이미 선언된 `  List<int> cards = [1, 5, 2, 6, 3, 4, 3, 2, 6, 1, 4, 5];`
+   해당 리스트 변수의 인덱스를 찾아 첫번째 카드와 두번째 카드의 인덱스의 값이 같으면 `setState` 함수로 카드 상태를 true로 만들어 뒤집기
 ```dart
 void onTapCard(int cardIndex) {
     print('$cardIndex 번째 카드를 선택함.');
@@ -105,10 +109,11 @@ void onTapCard(int cardIndex) {
     if (instantFirstCard == -1) {
       // 첫 번째 카드 선택
       instantFirstCard = cardIndex;
-    } else {
-      // 두 번째 카드 선택 시 만약 짝이 안맞는 카드 일 경우
-      var firstCard = cards[instantFirstCard];
-      var secondCard = cards[cardIndex];
+    } else { // 두 번째 카드 선택 시 만약 짝이 안맞는 카드 일 경우
+      var firstCard = cards[instantFirstCard]; 
+      // 리스트 card의 instantFirstCard번째 값
+      var secondCard = cards[cardIndex]; 
+      // 리스트 card의 cardIndex 값
 
       if (firstCard == secondCard) {
         // 두 카드가 같으면 성공
@@ -124,5 +129,24 @@ void onTapCard(int cardIndex) {
     setState(() {
       cardsFlippedState[cardIndex] = true;
     });
+  }
+```
+
+
+
+
+만약 firstCard와 secondCard의 값이 다르면 해당 함수 비동기로 처리
+async / await으로 비동기 처리 delayed 1초 부여
+setState로 카드 뒤집힘 상태 false로 상태관리 후 instantFirstCard  값을 -1로 설정하여 아직 첫번째 카드 선택 안됨을 명시
+```dart
+  void resetInstantCards(int firstIndex, int secondIndex) async {
+    await Future.delayed(Duration(seconds: 1)); // 1초 대기
+    setState(() {
+    // 1,2번째 선택 카드 다시 뒤집어진 상태로 변경
+      cardsFlippedState[firstIndex] = false;
+      cardsFlippedState[secondIndex] = false;
+    });
+    instantFirstCard = -1; // 선택 초기화
+    return;
   }
 ```
