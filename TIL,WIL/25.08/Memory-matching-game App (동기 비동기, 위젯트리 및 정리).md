@@ -1,5 +1,9 @@
 
 
+- 기존의 카드 뒤집기 방식은 1번째 카드를 선택 후 2번째 카드가 짝이 안맞으면 2번째 카드는 무슨카드인지 안보여줬음.
+- 비동기 방식으로 짝이 맞지않은 카드여도 1초간 보여주는 함수를 추가하여 보여주고 다시 뒤집어지게하는 로직 추가 (resetInstantCards)
+
+@card_boards.dart
 ```dart
 
 import 'package:flutter/material.dart';
@@ -36,7 +40,7 @@ class _CardBoardsState extends State<CardBoards> {
       // 첫 번째 카드 선택
       instantFirstCard = cardIndex;
     } else {
-      // 두 번째 카드 선택
+      // 두 번째 카드 선택 시 만약 짝이 안맞는 카드 일 경우
       var firstCard = cards[instantFirstCard];
       var secondCard = cards[cardIndex];
 
@@ -56,10 +60,11 @@ class _CardBoardsState extends State<CardBoards> {
     });
   }
 
-  /// 틀린 두 장 카드를 1초 후에 다시 뒤집는 함수
+  /// 틀린 두 장 카드를 1초 후에 다시 뒤집는 함수 (게임에서 두번째 선택 카드를 보여주고 뒤집어지게 하기 위해)
   void resetInstantCards(int firstIndex, int secondIndex) async {
     await Future.delayed(Duration(seconds: 1)); // 1초 대기
     setState(() {
+    // 1,2번째 선택 카드 다시 뒤집어진 상태로 변경
       cardsFlippedState[firstIndex] = false;
       cardsFlippedState[secondIndex] = false;
     });
