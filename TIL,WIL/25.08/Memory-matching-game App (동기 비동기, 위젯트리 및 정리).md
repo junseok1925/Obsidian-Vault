@@ -138,6 +138,8 @@ void onTapCard(int cardIndex) {
 만약 firstCard와 secondCard의 값이 다르면 해당 함수 비동기로 처리
 async / await으로 비동기 처리 delayed 1초 부여
 setState로 카드 뒤집힘 상태 false로 상태관리 후 instantFirstCard  값을 -1로 설정하여 아직 첫번째 카드 선택 안됨을 명시
+
+비동기식으로 만든 `restInstantCards` 함수
 ```dart
   void resetInstantCards(int firstIndex, int secondIndex) async {
     await Future.delayed(Duration(seconds: 1)); // 1초 대기
