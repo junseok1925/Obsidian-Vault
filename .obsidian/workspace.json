@@ -25,12 +25,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIL,WIL/25.08/Memory-matching-game App (동기 비동기, 위젯트리 및 정리).md",
+                "file": "TIL,WIL/25.08/Memory-matching-game App (위젯트리를 활용한 함수 사용 - countScore, tryCount).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Memory-matching-game App (동기 비동기, 위젯트리 및 정리)"
+              "title": "Memory-matching-game App (위젯트리를 활용한 함수 사용 - countScore, tryCount)"
             }
           },
           {
@@ -210,8 +210,10 @@
   },
   "active": "3a88322aac0b29eb",
   "lastOpenFiles": [
-    "TIL,WIL/25.08/Memory-matching-game App (조건문).md",
+    "Pasted image 20250902153158.png",
     "TIL,WIL/25.08/Memory-matching-game App (동기 비동기, 위젯트리 및 정리).md",
+    "TIL,WIL/25.08/Memory-matching-game App (위젯트리를 활용한 함수 사용 - countScore, tryCount).md",
+    "TIL,WIL/25.08/Memory-matching-game App (조건문).md",
     "TIL,WIL/25.08/Flutter Mac Setting.md",
     "TIL,WIL/25.08/Flutter project open, VS code Extenion plugin.md",
     "image 1.png",
