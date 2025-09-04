@@ -67,12 +67,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIL,WIL/25.09/02-3. Flutter 기본기 익히기.md",
+                "file": "TIL,WIL/25.09/02-3. Flutter 기본기 익히기(위젯, StatefulWidget, StatelessWidget).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02-3. Flutter 기본기 익히기"
+              "title": "02-3. Flutter 기본기 익히기(위젯, StatefulWidget, StatelessWidget)"
             }
           }
         ],
@@ -242,7 +242,7 @@
     "GEOMEX 교육.md",
     "TIL,WIL/25.09/02-1.  Memory-matching-game App (위젯트리를 활용한 함수 사용 - countScore, tryCount).md",
     "TIL,WIL/25.09/02-2.  Memory-matching-game App (Class 객체).md",
-    "TIL,WIL/25.09/02-3. Flutter 기본기 익히기.md",
+    "TIL,WIL/25.09/02-3. Flutter 기본기 익히기(위젯, StatefulWidget, StatelessWidget).md",
     "image 2.png",
     "TIL,WIL/25.09/01. Memory-matching-game App (동기 비동기, 위젯트리 및 정리).md",
     "무제.canvas",
