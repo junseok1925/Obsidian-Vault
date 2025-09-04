@@ -48,21 +48,35 @@
             }
           },
           {
+            "id": "4c470799d6fb761c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TIL,WIL/25.09/02-1.  Memory-matching-game App (위젯트리를 활용한 함수 사용 - countScore, tryCount).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "02-1.  Memory-matching-game App (위젯트리를 활용한 함수 사용 - countScore, tryCount)"
+            }
+          },
+          {
             "id": "18ea7a7b8595fd8e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIL,WIL/25.08/Memory-matching-game App.md",
+                "file": "TIL,WIL/25.09/02-3.  Memory-matching-game App (resetNewGame 함수 생성).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Memory-matching-game App"
+              "title": "02-3.  Memory-matching-game App (resetNewGame 함수 생성)"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -222,29 +236,30 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ecd520fd5b8e74e4",
+  "active": "18ea7a7b8595fd8e",
   "lastOpenFiles": [
-    "TIL,WIL/25.09/01. Memory-matching-game App (동기 비동기, 위젯트리 및 정리).md",
-    "TIL,WIL/25.09/02-2.  Memory-matching-game App (Class 객체).md",
+    "옵시디언 github 연동 테스트 페이지.md",
+    "GEOMEX 교육.md",
     "TIL,WIL/25.09/02-1.  Memory-matching-game App (위젯트리를 활용한 함수 사용 - countScore, tryCount).md",
+    "TIL,WIL/25.09/02-2.  Memory-matching-game App (Class 객체).md",
+    "TIL,WIL/25.09/02-3.  Memory-matching-game App (resetNewGame 함수 생성).md",
+    "image 2.png",
+    "TIL,WIL/25.09/01. Memory-matching-game App (동기 비동기, 위젯트리 및 정리).md",
     "무제.canvas",
+    "무제.md",
     "TIL,WIL/25.08/Flutter project open, VS code Extenion plugin.md",
     "TIL,WIL/25.09",
     "TIL,WIL/25.08/Memory-matching-game App (조건문).md",
     "Pasted image 20250902153158 1.png",
     "Pasted image 20250902153158.png",
     "Pasted image 20250828174901.png",
-    "image 2.png",
     "image 1.png",
     "SioT & Gasi 세미나.md",
     "TIL,WIL/25.08/Flutter Mac Setting.md",
     "README.md",
     "TIL,WIL/25.08/Why Flutter.md",
-    "옵시디언 github 연동 테스트 페이지.md",
     "image.png",
     "TIL,WIL",
-    "GEOMEX 교육.md",
-    "무제.md",
     "25.08/무제",
     "25.08/ㅂㅈ.md",
     "TIL,WIL/25.08",
