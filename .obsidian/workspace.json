@@ -67,12 +67,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIL,WIL/25.09/08-01. 뷰위젯 GridView.md",
+                "file": "TIL,WIL/25.09/아티클 -  지속가능한 성장을 위해서는 어떤 마인드셋을 가지면 좋을까.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "08-01. 뷰위젯 GridView"
+              "title": "아티클 -  지속가능한 성장을 위해서는 어떤 마인드셋을 가지면 좋을까"
             }
           }
         ],
@@ -238,8 +238,9 @@
   },
   "active": "18ea7a7b8595fd8e",
   "lastOpenFiles": [
-    "TIL,WIL/25.09/05-02. 뷰위젯 ListView (physics , cashExtent...).md",
     "TIL,WIL/25.09/08-01. 뷰위젯 GridView.md",
+    "TIL,WIL/25.09/아티클 -  지속가능한 성장을 위해서는 어떤 마인드셋을 가지면 좋을까.md",
+    "TIL,WIL/25.09/05-02. 뷰위젯 ListView (physics , cashExtent...).md",
     "TIL,WIL/25.09/05-01. 뷰위젯 PageView ( Controller 활용 ).md",
     "TIL,WIL/25.09/03. Flutter 기본기 익히기(위젯의 기본, StatefulWidget, StatelessWidget).md",
     "TIL,WIL/25.09/02-2.  Memory-matching-game App (Class 객체).md",
@@ -280,7 +281,6 @@
     "Chat_Bot/text_to_csv_converter.py",
     "Chat_Bot/text_embadding.py",
     "Chat_Bot/scraped.csv",
-    "무제 파일.md",
     "Pasted image 20250217094021.png"
   ]
 }
