@@ -67,12 +67,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIL,WIL/25.09/08-02. 뷰위젯 TapbarView.md",
+                "file": "TIL,WIL/25.09/08-02. 뷰위젯 TabBarView.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "08-02. 뷰위젯 TapbarView"
+              "title": "08-02. 뷰위젯 TabBarView"
             }
           }
         ],
@@ -239,7 +239,7 @@
   "active": "18ea7a7b8595fd8e",
   "lastOpenFiles": [
     "TIL,WIL/25.09/08-01. 뷰위젯 GridView.md",
-    "TIL,WIL/25.09/08-02. 뷰위젯 TapbarView.md",
+    "TIL,WIL/25.09/08-02. 뷰위젯 TabBarView.md",
     "TIL,WIL/아티클  1일차 지속가능한 성장을 위해서는 어떤 마인드셋을 가지면 좋을까.md",
     "옵시디언 github 연동 테스트 페이지.md",
     "TIL,WIL/25.09/05-02. 뷰위젯 ListView (physics , cashExtent...).md",
