@@ -67,12 +67,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIL,WIL/25.09/09-01. 레이아웃위젯 Container.md",
+                "file": "TIL,WIL/25.09/09-01. 레이아웃위젯 Container, SizeBox.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "09-01. 레이아웃위젯 Container"
+              "title": "09-01. 레이아웃위젯 Container, SizeBox"
             }
           }
         ],
@@ -239,7 +239,7 @@
   "active": "18ea7a7b8595fd8e",
   "lastOpenFiles": [
     "TIL,WIL/아티클  1일차 지속가능한 성장을 위해서는 어떤 마인드셋을 가지면 좋을까.md",
-    "TIL,WIL/25.09/09-01. 레이아웃위젯 Container.md",
+    "TIL,WIL/25.09/09-01. 레이아웃위젯 Container, SizeBox.md",
     "TIL,WIL/25.09/08-02. 뷰위젯 TabBarView.md",
     "TIL,WIL/25.09/05-01. 뷰위젯 PageView ( Controller 활용 ).md",
     "TIL,WIL/아티클  2일차 개발자의 기본 소양.md",
