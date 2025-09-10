@@ -133,8 +133,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 470.5,
-    "collapsed": true
+    "width": 470.5
   },
   "right": {
     "id": "7afe4a8a56070175",
@@ -239,14 +238,15 @@
   },
   "active": "18ea7a7b8595fd8e",
   "lastOpenFiles": [
+    "Pasted image 20250910185242.png",
+    "TIL,WIL/25.09/09-01. 레이아웃위젯 Container, SizeBox, Row Column, Expanded.md",
+    "TIL,WIL/25.09/10. AppBar, Container, SizeBox, Row Column 예제.md",
     "TIL,WIL/아티클  1일차 지속가능한 성장을 위해서는 어떤 마인드셋을 가지면 좋을까.md",
     "TIL,WIL/25.09/05-02. 뷰위젯 ListView (physics , cashExtent...).md",
     "무제 1.base",
     "무제.base",
     "무제 2.base",
-    "TIL,WIL/25.09/10. AppBar, Container, SizeBox, Row Column 예제.md",
     "TIL,WIL/아티클 3일차 비전공자로서의 개발자.md",
-    "TIL,WIL/25.09/09-01. 레이아웃위젯 Container, SizeBox, Row Column, Expanded.md",
     "TIL,WIL/25.09/08-02. 뷰위젯 TabBarView.md",
     "TIL,WIL/25.09/05-01. 뷰위젯 PageView ( Controller 활용 ).md",
     "TIL,WIL/아티클  2일차 개발자의 기본 소양.md",
