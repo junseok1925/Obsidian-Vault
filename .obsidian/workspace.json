@@ -77,12 +77,14 @@
             "id": "3b179db7c7228e84",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Pasted image 20250902153158 1.png"
+                "file": "TIL,WIL/25.09/10. AppBar, Container, SizeBox, Row Column,ElevatedButton 예제.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250902153158 1"
+              "icon": "lucide-file",
+              "title": "10. AppBar, Container, SizeBox, Row Column,ElevatedButton 예제"
             }
           }
         ],
@@ -246,11 +248,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "128038d9a921b4cb",
+  "active": "3b179db7c7228e84",
   "lastOpenFiles": [
+    "Pasted image 20250910185520.png",
     "Pasted image 20250910185242.png",
     "Pasted image 20250902153158 1.png",
-    "Pasted image 20250910185520.png",
     "Pasted image 20250910192808.png",
     "README.md",
     "TIL,WIL/25.09/10. AppBar, Container, SizeBox, Row Column,ElevatedButton 예제.md",
