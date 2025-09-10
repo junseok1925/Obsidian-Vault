@@ -65,18 +65,28 @@
             "id": "18ea7a7b8595fd8e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "TIL,WIL/25.09/10. AppBar, Container, SizeBox, Row Column,ElevatedButton 예제.md",
-                "mode": "source",
-                "source": false
+                "file": "Pasted image 20250910192808.png"
               },
-              "icon": "lucide-file",
-              "title": "10. AppBar, Container, SizeBox, Row Column,ElevatedButton 예제"
+              "icon": "lucide-image",
+              "title": "Pasted image 20250910192808"
+            }
+          },
+          {
+            "id": "3b179db7c7228e84",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Pasted image 20250902153158 1.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20250902153158 1"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -236,12 +246,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "18ea7a7b8595fd8e",
+  "active": "128038d9a921b4cb",
   "lastOpenFiles": [
-    "Pasted image 20250910185520.png",
     "Pasted image 20250910185242.png",
-    "TIL,WIL/25.09/09-01. 레이아웃위젯 Container, SizeBox, Row Column, Expanded.md",
+    "Pasted image 20250902153158 1.png",
+    "Pasted image 20250910185520.png",
+    "Pasted image 20250910192808.png",
+    "README.md",
     "TIL,WIL/25.09/10. AppBar, Container, SizeBox, Row Column,ElevatedButton 예제.md",
+    "TIL,WIL/25.09/09-01. 레이아웃위젯 Container, SizeBox, Row Column, Expanded.md",
     "TIL,WIL/아티클  1일차 지속가능한 성장을 위해서는 어떤 마인드셋을 가지면 좋을까.md",
     "TIL,WIL/25.09/05-02. 뷰위젯 ListView (physics , cashExtent...).md",
     "무제 1.base",
@@ -266,13 +279,11 @@
     "TIL,WIL/25.08/Flutter project open, VS code Extenion plugin.md",
     "TIL,WIL/25.09",
     "TIL,WIL/25.08/Memory-matching-game App (조건문).md",
-    "Pasted image 20250902153158 1.png",
     "Pasted image 20250902153158.png",
     "Pasted image 20250828174901.png",
     "image 1.png",
     "SioT & Gasi 세미나.md",
     "TIL,WIL/25.08/Flutter Mac Setting.md",
-    "README.md",
     "TIL,WIL/25.08/Why Flutter.md",
     "image.png",
     "TIL,WIL",
