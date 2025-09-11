@@ -79,12 +79,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIL,WIL/25.09/10. AppBar, Container, SizeBox, Row Column,ElevatedButton 예제.md",
+                "file": "TIL,WIL/아티클 4일차 개발자를 위한 정보 검색 팁.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "10. AppBar, Container, SizeBox, Row Column,ElevatedButton 예제"
+              "title": "아티클 4일차 개발자를 위한 정보 검색 팁"
             }
           }
         ],
@@ -250,12 +250,14 @@
   },
   "active": "3b179db7c7228e84",
   "lastOpenFiles": [
+    "TIL,WIL/25.09/10. AppBar, Container, SizeBox, Row Column,ElevatedButton 예제.md",
+    "TIL,WIL/아티클 4일차 개발자를 위한 정보 검색 팁.md",
+    "TIL,WIL/25.09/무제.md",
     "Pasted image 20250910185520.png",
     "Pasted image 20250910185242.png",
     "Pasted image 20250902153158 1.png",
     "Pasted image 20250910192808.png",
     "README.md",
-    "TIL,WIL/25.09/10. AppBar, Container, SizeBox, Row Column,ElevatedButton 예제.md",
     "TIL,WIL/25.09/09-01. 레이아웃위젯 Container, SizeBox, Row Column, Expanded.md",
     "TIL,WIL/아티클  1일차 지속가능한 성장을 위해서는 어떤 마인드셋을 가지면 좋을까.md",
     "TIL,WIL/25.09/05-02. 뷰위젯 ListView (physics , cashExtent...).md",
@@ -292,7 +294,6 @@
     "25.08/무제",
     "25.08/ㅂㅈ.md",
     "TIL,WIL/25.08",
-    "Chat_Bot/text_to_csv_converter.md",
     "일기/2025.05",
     "일기",
     "Pasted image 20250217094021.png"
