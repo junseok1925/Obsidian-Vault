@@ -57,7 +57,7 @@ void main() {
 	  score['철수'] = '3'; // '철수' = 3 추가 됨
 	  score['준석'] = '4'; // '준석' = 4 로 수정 됨
 	  
-	  int value = score['준석']
+	  int value = score['준석']!; // ! -> '준석'이라는 키에는 무족건 값이 있다고 알림
 	  print(value); // 4
   
 	  score.forEach((key, value) {
