@@ -387,3 +387,7 @@ class ElectricCar extends Car {
 - 미완성 메소드(추상 메소드)를 포함 할 수 있다.
 - 직접 객체 생성 불가능
 - 반드시 상속을 통해 완성해야 하는 클래스
+
+```dart
+void
+```
