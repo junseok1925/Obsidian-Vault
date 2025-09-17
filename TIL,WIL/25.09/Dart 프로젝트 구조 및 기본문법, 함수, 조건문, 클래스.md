@@ -334,4 +334,25 @@ void main(List<String> arguments) {
 
 ### 상속
 
-- 부모 클랫의 특징을 그대로 물
+- 부모 클랫의 특징을 그대로 물려받고 거기에 특징을 추가할 수 있다.
+```dart
+
+// 부모 클래스
+class Car {
+  int wheels = 4;
+
+  void drive() {
+    print('브르릉! 자동차가 달립니다.');
+  }
+}
+
+
+// 자식 클래스
+class ElectricCar extends Car {
+  int batteryLevel = 100;
+
+  void charge() {
+    print('충전 중... 배터리 레벨: $batteryLevel%');
+  }
+}
+```
