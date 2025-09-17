@@ -389,5 +389,53 @@ class ElectricCar extends Car {
 - 반드시 상속을 통해 완성해야 하는 클래스
 
 ```dart
-void
+void main() {
+  Car car1 = Audi();
+  Car car2 = Telsa();
+  Car car3 = Porsche();
+
+  car1.turnSignal();
+  car2.turnSignal();
+  car3.turnSignal();
+}
+
+abstract class Car {
+  int wheels = 4;
+  void drive() {
+    print('부릉');
+  }
+
+  void turnSignal();
+}
+
+class Audi extends Car {
+  @override
+  void turnSignal() {
+    print('아우디');
+  }
+}
+
+class Telsa extends Car {
+  @override
+  void turnSignal() {
+    print('테슬라');
+  }
+}
+
+class Porsche extends Car {
+  @override
+  void turnSignal() {
+    print('포르쉐');
+  }
+}
+
+```
+
+---
+### static 키워드
+
+- `static`은 클래스에 속하는 공유변수 또는 공유함수를 정의할 때 사용하는 키워드
+
+```dart
+
 ```
