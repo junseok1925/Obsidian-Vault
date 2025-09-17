@@ -337,12 +337,25 @@ void main(List<String> arguments) {
 - 부모 클랫의 특징을 그대로 물려받고 거기에 특징을 추가할 수 있다.
 ```dart
 
+
+void main() {
+	Car c = Car();
+	c.drive(); // 브르릉
+	
+	Car c2 = ElectricCar();
+	c2.drive(); // 위이잉
+	
+	if(c2 is ElectricCar){
+		(c2 as ElectricCar).charge(); //충전 중...
+	}
+}
+
 // 부모 클래스
 class Car {
   int wheels = 4;
 
   void drive() {
-    print('브르릉! 자동차가 달립니다.');
+    print('브르릉');
   }
 }
 
@@ -364,3 +377,13 @@ class ElectricCar extends Car {
   }
 }
 ```
+
+
+---
+
+### 추상클래스
+
+- 클래스 앞에 `adstract` 키워드를 사용
+- 미완성 메소드(추상 메소드)를 포함 할 수 있다.
+- 직접 객체 생성 불가능
+- 반드시 상속을 통해 완성해야 하는 클래스
