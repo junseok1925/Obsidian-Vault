@@ -437,5 +437,44 @@ class Porsche extends Car {
 - `static`은 클래스에 속하는 공유변수 또는 공유함수를 정의할 때 사용하는 키워드
 
 ```dart
+class Student {
+
+  // 인스턴스 변수: 객체(학생)마다 개별적으로 다른 값 가짐
+  String name; 
+
+  // static 변수: 모든 객체가 공유하는 클래스 변수
+  static String schoolName = "토평 고등학교";
+
+  // static 메서드: 객체 생성 없이 클래스 이름으로 직접 호출 가능
+  static void displaySchoolName() {
+    print("우리 학교는 $schoolName 입니다.");
+  }
+
+  // 생성자: Student("이름") 형태로 객체를 생성할 때 name을 초기화
+  Student(this.name);
+}
+
+void main() {
+
+  // static 변수는 클래스 이름으로 접근 가능 (객체 생성 필요 X)
+  print("학교 이름: ${Student.schoolName}"); 
+  Student.displaySchoolName();  // static 메서드 호출 (객체 필요 없음)
+
+  // Student 객체 생성 (각자 name은 다르지만 schoolName은 공유)
+  Student student1 = Student("강준석");
+  Student student2 = Student("강강준석");
+
+  // 인스턴스 변수(name)는 객체마다 다르지만,
+  // static 변수(schoolName)는 모든 객체가 동일하게 참조
+  print("${student1.name} 학생의 학교 이름은 ${Student.schoolName}입니다.");
+  print("${student2.name} 학생의 학교 이름은 ${Student.schoolName}입니다.");
+
+  // static 변수 값 변경 → 모든 객체에 영향을 미침
+  Student.schoolName = "새로운 학교"; 
+
+  // student1, student2 모두 같은 새로운 schoolName을 출력
+  print("${student1.name} 학생의 새로운 학교 이름은 ${Student.schoolName}입니다.");
+  print("${student2.name} 학생의 새로운 학교 이름은 ${Student.schoolName}입니다.");
+}
 
 ```
