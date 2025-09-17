@@ -350,6 +350,14 @@ class Car {
 // 자식 클래스
 class ElectricCar extends Car {
   int batteryLevel = 100;
+  
+  // 재정의 했음을 알려주는 Annotation(어노테이션)
+  // 실행에 영향을 주지않지만, 다른 개발자에서 재정의했음을 명시
+  // 부모 클래스의 drive 메서드를 재정의 가능
+  @override
+  void drive() {
+    print('위이잉');
+  }
 
   void charge() {
     print('충전 중... 배터리 레벨: $batteryLevel%');
