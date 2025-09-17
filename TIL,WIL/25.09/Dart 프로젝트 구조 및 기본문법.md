@@ -1,3 +1,0 @@
-- vs코드 커멘트 팔레트에 `dart new project` 입력
-- `Console Application` 선택
-- 프로젝트 생성 위치 및 이름 설정
