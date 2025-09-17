@@ -306,3 +306,32 @@ void main(){
 }
 ```
 
+- 네임드 생성자
+	```dart
+	class Marine {
+  int hp = 40;
+  int attack = 6;
+
+  void move(String direction) {
+    print("마린이 $direction 방향으로 이동합니다.");
+  }
+
+  void shoot() {
+    print("탕탕! 마린이 공격합니다. 공격력: $attack");
+  }
+  Marine();
+  Marine.hero() : hp = 100, attack = 6; //네임드
+}
+
+void main(List<String> arguments) {
+  Marine hero = Marine.hero(); // 네임드 생성자 사용
+  Marine normal = Marine();
+}
+
+	```
+
+---
+
+### 상속
+
+- 부모 클랫의 특징을 그대로 물
