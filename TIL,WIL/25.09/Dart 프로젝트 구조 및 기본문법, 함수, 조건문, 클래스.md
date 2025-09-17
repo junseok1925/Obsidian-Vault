@@ -271,3 +271,38 @@ class Marine {
 
 ```
 
+
+생성자
+- 클래스를 생성(객체로 만드는 일)할 때 초기화(속성에 값을 할당)하는 함수
+```dart
+class Person {
+  String name;
+  int age;
+
+  // 기본 생성자
+  Person(this.name, this.age);
+}
+
+class Person2 {
+  String name;
+  int age;
+  bool? isMale;
+
+// 네임드 파라미터를 사용하는 기본생성자
+  Person2({required this.name, required this.age, this.isMale});
+}
+
+void main(){
+	Person p1 = Person("지드래건", 30);
+	// Person p2 = Person(30, "지드래건"); // 불가능, 순서가 다름
+	
+	Person2 pp = Person2(name: "지드래건", age: 30);
+	Person2 pp2 = Person2(age: 30, name: "지드래건"); // 가능 (이름을 지정해서)
+	
+	// nullable isMale
+	Person2(name: "지드래건", age: 30); // 가능
+	Person2(name: "지드래건", age: 30, isMale: true);
+  // Person2(name: "지드래건", isMale: true); // 불가능 required 옵션이지만 age가 없어서
+}
+```
+
