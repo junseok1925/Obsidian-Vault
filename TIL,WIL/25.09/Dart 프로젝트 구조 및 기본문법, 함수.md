@@ -92,27 +92,41 @@ var price = 100;
 
 // void : 결과값 없이 실행만 한다는 뜻
 // sayHello(): 함수 이름 (블록의 이름)
+void main() {
+  sayHello();
+}
 void sayHello() {
-  print('안녕하세요!');
+  print('Hi!!!!');
 }
 
-void printName(String name) {
+결과 : Hi!!!!
+
+```
+
+```dart
+void printName(String name){
 	print("이름은 $name입니다");
 }
 
-void main() {
-  // printName 함수를 실제로 호출
-  printName("철수");
-  printName("영희");
+void main(){
+	printName('강준석');
+	printName('kangjunseok');
 }
 
-double circle(double r) {
+결과: 이름은 강준석입니다
+	 이름은 kangjunesok입니다
+
+```
+
+```dart
+double circle(double r){ //circle 함수는 매개변수 r를 받는다
 	return 2 * 3.14159 * r;
 }
 
 void main(){
-	double result = circle(5); 
+	double result = circle(5); // 매개변수 double r 에 5가 할당 된다.
 	print(result);
-	// 31.4159
 }
+
+결과 : 31.4159
 ```
