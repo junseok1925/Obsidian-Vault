@@ -100,12 +100,19 @@ void printName(String name) {
 	print("이름은 $name입니다");
 }
 
+void main() {
+  // printName 함수를 실제로 호출
+  printName("철수");
+  printName("영희");
+}
+
 double circle(double r) {
 	return 2 * 3.14159 * r;
 }
 
 void main(){
-	int result = circle(5);
+	double result = circle(5); 
 	print(result);
+	// 31.4159
 }
 ```
