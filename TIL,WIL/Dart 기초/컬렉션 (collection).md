@@ -55,7 +55,10 @@ void main() {
 
 	  print(score['준석']); // 1
 	  score['철수'] = '3'; // '철수' = 3 추가 됨
-	  score['준석'] = '4'; // '준석' = 4 로 수정 안됨
+	  score['준석'] = '4'; // '준석' = 4 로 수정 됨
+	  
+	  int value = score['준석']
+	  print(value); // 4
   
 	  score.forEach((key, value) {
 		print('$key: $value');
