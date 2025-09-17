@@ -79,12 +79,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIL,WIL/25.09/16-02 알람 앱 화면 구성 연습.md",
+                "file": "TIL,WIL/25.09/Dart 프로젝트 구조 및 기본문법.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "16-02 알람 앱 화면 구성 연습"
+              "title": "Dart 프로젝트 구조 및 기본문법"
             }
           }
         ],
@@ -250,8 +250,9 @@
   },
   "active": "3b179db7c7228e84",
   "lastOpenFiles": [
-    "TIL,WIL/25.09/16-01. 기능성 위젯 switch, slide, GestureDetector 위젯.md",
     "TIL,WIL/25.09/16-02 알람 앱 화면 구성 연습.md",
+    "TIL,WIL/25.09/Dart 프로젝트 구조 및 기본문법.md",
+    "TIL,WIL/25.09/16-01. 기능성 위젯 switch, slide, GestureDetector 위젯.md",
     "Pasted image 20250916232331.png",
     "TIL,WIL/25.09/12-02. 기능성 위젯 Text 위젯.md",
     "TIL,WIL/아티클  1일차 지속가능한 성장을 위해서는 어떤 마인드셋을 가지면 좋을까.md",
