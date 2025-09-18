@@ -158,3 +158,48 @@ Container(
 - **`child`**
     → Container 내부에 위치할 단일 자식 위젯
     → 예: `child: Text('Hello')`
+
+
+**EdgeInsets 클래스**
+
+컨테이너 안에 있는 자식 위젯과 부모 컨테이너 위젯 간에 간격을 조절
+
+- 왼쪽, 위, 오른쪽, 아래 방향 각각 오프셋(어떤 방향으로 얼마만큼 떨어져 있는 거리) 정보가지고 있는 클래스
+- 내부 여백(padding), 외부 여백(margin) 설정 시 주로 사용
+- `EdgeInsets.all(value)` → 네 방향 모두 같은 여백
+- `EdgeInsets.symmetric(horizontal: x, vertical: y)` → 좌우/상하 각각 설정
+- `EdgeInsets.only(left: x, top: y, ...)` → 방향별 개별 설정 가능
+
+
+**Alignment 클래스**
+
+위젯을 어디에 위치시킬지를 정의하는 클래스
+x, y 좌표값 (-1.0 ~ 1.0) 으로 위치 지정
+
+```dart
+Alignment.topLeft
+Alignment.topCenter
+Alignment.topRight
+Alignment.centerLeft
+Alignment.center
+Alignment.centerRight
+Alignment.bottomLeft
+Alignment.bottomCenter
+Alignment.bottomRight'
+
+Alignment(0.3, -0.8) // x: 오른쪽으로 30%, y: 위쪽으로 80%
+```
+
+
+---
+
+### SizedBox vs Container
+
+`SizeBox`
+-  단순히 공간을 만들거나 위젯의 크기만 지정할 때
+- 스타일, 패딩, 정렬이 필요 없고 간단한 간격만 줄때
+
+`Container`
+- 크기뿐만 아니라 스타일링이 필요한 경우 ( 배경색, 모서리 둥글게, 그림자 등...)
+- padding, margin, 정렬, decoration 등 다양한 속성을 써야 할 떄
+- 복합적인 UI를 꾸밀 때
