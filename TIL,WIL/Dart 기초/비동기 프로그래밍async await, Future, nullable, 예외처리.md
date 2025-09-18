@@ -171,3 +171,37 @@ String getName(){
 }
 ```
 
+
+----
+
+### 예외처리
+
+try/catch
+
+```dart
+void main() {
+  try {
+	  int? value = int.tryParse("가"); 
+	  print("변환결과");
+	  print(value!);
+  } catch (e) {
+	  // e: 실제로 발생한 예외 객체
+    print("예외 발생: $e");
+  }
+}
+```
+
+
+finally
+```dart
+  try {
+    print("시도 중...");
+	  int? value = int.tryParse("가"); 
+	  print("변환결과");
+	  print(value!);
+  } catch (e) {
+    print("에러 발생!");
+  } finally {
+    print("마무리 실행됨");
+  }
+```
