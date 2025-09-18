@@ -82,3 +82,72 @@ MaterialApp(
   home: const MyHomePage(title: 'Flutter Demo Home Page'),
 );
 ```
+
+---
+
+### Scaffold
+
+ 앱의 기본적인 화면 구조를 자는 뼈대 위젯
+ 
+- **상단바**(AppBar), **하단바**(BottomNavigationBar), **본문**(body) 등을 담는 컨테이너
+- Flutter 앱의 "화면 1개"를 구성할 때 대부분 Scaffold를 사용
+
+`MaterialApp` 은 그림일기장 전체, `Scaffold` 는 그림 일기장 각 낱장
+
+**주요 속성**
+
+- `appBar`: 상단바 설정
+- `body`: 화면의 주요 내용
+- `floatingActionButton`: 동작 버튼
+- `drawer`: 사이드 메뉴
+
+```dart
+Scaffold(
+  appBar: AppBar(
+    title: Text(widget.title),
+  ),
+  body: Center(
+    child: Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        const Text('You have pushed the button this many times:'),
+        Text(
+          '$_counter',
+          style: Theme.of(context).textTheme.headlineMedium,
+        ),
+      ],
+    ),
+  ),
+  floatingActionButton: FloatingActionButton(
+    onPressed: _incrementCounter,
+    tooltip: 'Increment',
+    child: const Icon(Icons.add),
+  ), // This trailing comma makes auto-formatting nicer for build methods.
+);
+```
+
+----
+
+### AppBar
+
+화면 상단에 나타나는 헤더 영역
+타이틀, 아이콘, 액션 버튼 등을 배치할 수 있으며, `Scaffold`의 `appBar` 속성내에 사용
+
+**주요 속성**
+
+- `title`: 제목 표시
+- `actions`: 우측 액션 버튼들
+- `leading`: 왼쪽 아이콘 (예: 뒤로가기, 햄버거 메뉴 등)
+- `backgroundColor`: 배경색 지정
+
+```dart
+AppBar(
+  title: Text('Flutter'),
+  actions: [
+    IconButton(
+      icon: Icon(Icons.settings),
+      onPressed: () {},
+    ),
+  ],
+);
+```
