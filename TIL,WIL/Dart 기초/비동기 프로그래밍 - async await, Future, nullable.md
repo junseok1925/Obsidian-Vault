@@ -102,3 +102,71 @@ void main() async {
 // 프로그램 종료
 
 ```
+
+---
+
+### Nullable
+
+아직 값이 없다는 뜻의 툭별한 값
+Dart에서는 null 안전모드(null-safety)가 기본이라서, 명시적으로 nullable로 선언하지 않으면 null을 넣을 수 없다.
+
+```dart
+
+String name1 = null; : //이렇게 하면 오류남
+
+String name2 = "강준석"; //이렇게 해도 오류남 ( 기본적으로 non-nullable) 이라서
+name = null;
+```
+
+nullable 선언 방법
+
+`String? name = null;` : ? (물음표) 붙이기
+
+
+nullable 변수는 그냥 사용 불가
+- nullable은 해당 변수가 null이라고 하는 것이 아니라 "null일 수도 있으니 조심하라" 라는 것
+```dart
+String? name2 = null
+print(name.length);
+// 에러남 null일 수도 있어서 바로 못 씀
+
+
+String? name2 = null
+
+if(name2 != null){
+	print(name.lenght);
+}
+// 조건문으로 null 인지 체크해야지 사용가능
+```
+
+null 처리 방법들
+
+- null 체크 먼저 해
+```dart
+String? name = null;
+if (name != null) {
+  print(name.length); // ✅ 안전
+}
+```
+
+-  null-aware operator (`?.`)
+```dart
+String? name = null;
+print(name?.length);  // name이 null이면 null 반환, 아니면 length
+```
+
+- default 값 주기 (`??`)
+```dart
+String? name = null;
+print(name ?? "이름 없음"); // ??는 앞의 값이 null이면 뒤의 값으로 대체해줌
+```
+
+- null이 아님 명시 연산자 (`!`)
+```dart
+String? name = getName();
+print(name!.length); // "절대 null 아님!"이라고 강제로 처리
+
+String getName(){
+	return "LEE";
+}
+```
