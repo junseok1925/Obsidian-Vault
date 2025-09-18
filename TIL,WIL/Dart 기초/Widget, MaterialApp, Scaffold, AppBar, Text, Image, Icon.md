@@ -151,3 +151,29 @@ AppBar(
   ],
 );
 ```
+
+---
+### Text
+
+화면에 글자를 표시
+
+```dart
+// 스타일 없이 기본 사용
+Text("안녕하세요")
+
+
+Text(
+  '제목입니다',
+  // 폰트 스타일 적용
+  style: TextStyle(
+    fontSize: 24,
+    fontWeight: FontWeight.bold,
+    color: Colors.blue,
+  ),
+  // 정렬. TextAlign enum 사용
+  // (열거형)은 고정된 수의 상수 값들을 나타내는 특별한 종류의 클래스
+  align: TextAlign.center,
+	overflow: TextOverflow.ellipsis,
+	maxLines: 1,
+)
+```
