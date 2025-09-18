@@ -205,3 +205,65 @@ finally
     print("마무리 실행됨");
   }
 ```
+
+---
+
+### enum
+
+정해진 값들 중 하나만 선택할 수 있게 해주는 자료형
+요일, 상태, 색깔 등 한정된 선택지를 가질 때 유용하게 사용
+
+- enum을 사용하지 않았을 때
+```dart
+void printTodo(String day) {
+  if (day == "월요일") {
+    print('🧹 청소하기');
+  } else if (day == "화요일") {
+    print('🛍️ 장보기');
+  } else if (day == "수요일") {
+    print('🧼 빨래하기');
+  } else if (day == "목요일") {
+    print('🧾 장부 정리');
+  } else if (day == "금요일") {
+    print('🧠 공부 마무리');
+  } else if (day == "토요일") {
+    print('🍕 친구 만나기');
+  } else if (day == "일요일") {
+    print('😴 푹 쉬기!');
+  }
+}
+
+void main(){
+	printTodo("월요일"); // 청소하기
+	printTodo("수요알"); // 출력안됨 - 이미 월요일에서 출력이 되어 if문 종료
+}
+```
+
+ - enum을 사용했을  때
+```dart
+enum Weekday { monday, tuesday, wednesday, thursday, friday, saturday, sunday }
+
+void printTodo(Weekday day) {
+  if (day == Weekday.monday) {
+    print('🧹 청소하기');
+  } else if (day == Weekday.tuesday) {
+    print('🛍️ 장보기');
+  } else if (day == Weekday.wednesday) {
+    print('🧼 빨래하기');
+  } else if (day == Weekday.thursday) {
+    print('🧾 장부 정리');
+  } else if (day == Weekday.friday) {
+    print('🧠 공부 마무리');
+  } else if (day == Weekday.saturday) {
+    print('🍕 친구 만나기');
+  } else if (day == Weekday.sunday) {
+    print('😴 푹 쉬기!');
+  }
+}
+
+void main() {
+  printTodo(Weekday.monday);   // 출력: 청소하기
+  printTodo(Weekday.wednesday); // 출력: 빨래하기
+  // printTodo(Weekday.www); // enum 에 포함안된 값 입력 시 에러!
+}
+```
