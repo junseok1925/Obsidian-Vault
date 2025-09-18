@@ -125,3 +125,36 @@ SizedBox + 레이아웃, 스타일, 정렬 등 다양한 기능을 가진 다목
 - `padding`, `margin`, `color`, `alignment`, `decoration` 등 UI 스타일 설정 가능
 - _**크기가 지정되지 않으면 부모위젯의 크기를 물려받음**_
 
+주요속성
+```dart
+Container(
+  width: 200,
+  height: 100,
+  padding: EdgeInsets.all(20),
+  margin: EdgeInsets.all(10),
+  decoration: BoxDecoration(
+    color: Colors.blue,
+    border: Border.all(color: Colors.green, width: 10),
+    borderRadius: BorderRadius.circular(20),
+  ),
+  child: Container(color: Colors.black),
+)
+```
+
+- **`width`, `height`** : 컨테이너의 너비와 높이를 지정
+
+- **`color`** : 배경색 설정 (단독 사용 시 `decoration`과 함께 사용할 수 없음)
+
+- **`padding`** : 자식 위젯 내부 여백 (내용과 테두리 사이 공간)
+
+- **`margin`** : 외부 여백 (Container 자신과 바깥 위젯 사이의 공간)
+
+- **`alignment`** : 자식 위젯의 정렬 위치를 지정한다.
+
+- **`decoration`**
+    → 배경, 테두리, 그림자, 둥근 모서리 등 스타일을 설정한다.
+    → 예: `BoxDecoration(borderRadius: BorderRadius.circular(8))`
+
+- **`child`**
+    → Container 내부에 위치할 단일 자식 위젯
+    → 예: `child: Text('Hello')`
