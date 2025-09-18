@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIL,WIL/Dart 기초/async await, Future, nullable, 예외처리, enum.md",
+                "file": "TIL,WIL/Dart 기초/위젯이란.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "async await, Future, nullable, 예외처리, enum"
+              "title": "위젯이란"
             }
           }
         ]
@@ -183,8 +183,9 @@
   },
   "active": "a9bed90a03e61bac",
   "lastOpenFiles": [
-    "TIL,WIL/Dart 기초/컬렉션 (collection).md",
     "TIL,WIL/Dart 기초/async await, Future, nullable, 예외처리, enum.md",
+    "TIL,WIL/Dart 기초/위젯이란.md",
+    "TIL,WIL/Dart 기초/컬렉션 (collection).md",
     "TIL,WIL/Dart 기초/제너릭(Generic).md",
     "TIL,WIL/Dart 기초/Dart 프로젝트 구조 및 기본문법, 함수, 조건문, 클래스.md",
     "TIL,WIL/Dart 기초",
@@ -222,7 +223,6 @@
     "TIL,WIL/25.09/03. Flutter 기본기 익히기(위젯의 기본, StatefulWidget, StatelessWidget).md",
     "TIL,WIL/25.09/02.md",
     "TIL,WIL/25.09/무제",
-    "GEOMEX 교육.md",
     "무제.canvas",
     "TIL,WIL/25.09",
     "Pasted image 20250902153158.png",
