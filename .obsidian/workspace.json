@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIL,WIL/Dart 기초/Column, Row.md",
+                "file": "TIL,WIL/Dart 기초/Column, Row, SizedBox, Container.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Column, Row"
+              "title": "Column, Row, SizedBox, Container"
             }
           }
         ]
@@ -184,7 +184,7 @@
   "active": "a9bed90a03e61bac",
   "lastOpenFiles": [
     "TIL,WIL/Dart 기초/Widget, MaterialApp, Scaffold, AppBar, Text, Image, Icon.md",
-    "TIL,WIL/Dart 기초/Column, Row.md",
+    "TIL,WIL/Dart 기초/Column, Row, SizedBox, Container.md",
     "TIL,WIL/Dart 기초/async await, Future, nullable, 예외처리, enum.md",
     "TIL,WIL/Dart 기초/컬렉션 (collection).md",
     "TIL,WIL/Dart 기초/제너릭(Generic).md",

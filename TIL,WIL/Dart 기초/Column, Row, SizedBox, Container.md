@@ -89,3 +89,39 @@ SingleChildScrollView(
   ),
 
 ```
+
+---
+
+### SizedBox
+
+간격이나 스타일링을 위한 위젯
+고정된 너비와 높이를 갖는 박스를 생성하는 위젯
+
+
+```dart
+// 간격 만들기
+SizedBox(height: 20)
+
+// 고정 크기 안에 위젯 배치
+SizedBox(
+  width: 200,
+  height: 100,
+  child: ElevatedButton(onPressed: (){}, child: Text('Hi')),
+)
+
+// 고정 크기 안에 위젯 배치
+SizedBox(
+  width: double.infinity, // 무한히 확대하겠다는 의미
+  height: 100,
+  child: ElevatedButton(onPressed: (){}, child: Text('Hi')),
+)
+```
+
+
+### Container
+
+SizedBox + 레이아웃, 스타일, 정렬 등 다양한 기능을 가진 다목적 위젯
+
+- `padding`, `margin`, `color`, `alignment`, `decoration` 등 UI 스타일 설정 가능
+- _**크기가 지정되지 않으면 부모위젯의 크기를 물려받음**_
+
