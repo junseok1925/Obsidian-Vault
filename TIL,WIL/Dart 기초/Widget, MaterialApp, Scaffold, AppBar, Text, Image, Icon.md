@@ -221,20 +221,33 @@ Flutter에서 제공하는 기본 아이콘을 표시하는 데 사용
 - `size`: 아이콘 크기
 
 ```dart
-// IconData 를 생성자의 첫번째 파라미터로 전달!
-// 직접 IconData 객체를 만들어서 사용할 일은 없고 
-// Icons 클래스 내 정의된 정적 멤버변수 사용
-// Icon(Icons.star)
-class Icon extends StatelessWidget {
-  /// Creates an icon.
-  const Icon(
-    this.icon, {
-    super.key,
-    ...
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    const MaterialApp(
+      home: Scaffold(
+        body: Center(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: 
+              Icon(Icons.home, size: 40, color: Colors.blue),
+              // Material 안드로이드 st
+              SizedBox(width: 30),
+              Icon(CupertinoIcons.home, size: 40, color: Colors.red), // Cupertino iOS st
+            ],
+          ),
+        ),
+      ),
+    ),
+  );
+}
+
+
 ```
 
-**정의되어 있는 아이콘 목록들**
-
+**정의되어 있는 아이콘 목록들**s
 - [https://api.flutter.dev/flutter/material/Icons-class.html](https://api.flutter.dev/flutter/material/Icons-class.html)
 - [https://api.flutter.dev/flutter/cupertino/CupertinoIcons-class.html](https://api.flutter.dev/flutter/cupertino/CupertinoIcons-class.html)
     - CupertinoIcons 는 iOS 스타일 아이콘
