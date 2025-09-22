@@ -1,10 +1,10 @@
-### List
+# List
 
 >순서가 있는 자료 구조
   다른 언어의 배열(Array)와 비슷
   **중복 값 허용 됨**
 
-#### 선언 방법
+## 선언 방법
 ```dart
 // 명시적 타입 지정
 List<String> student = ["강준석","철수","영희","맹구"];
@@ -13,7 +13,7 @@ List<String> student = ["강준석","철수","영희","맹구"];
 var nums = [1,2,3,4];
 ```
 
-#### 주요 특징
+## 주요 특징
 
 1. **중복 값 허용**
 ```dart
@@ -29,7 +29,7 @@ name.add["영희"];
 print(name); // 결과 : 강준석, 철수, 영희
 ```
 
-#### 주요 메서드
+## 주요 메서드
 
 ```dart
 void main() {
@@ -55,15 +55,29 @@ void main() {
 	cars.removeAt(0);
 	print(cars); // 페라리
 	
+	// 모두 삭제
+	cars.clear
+	
+	// 특정 요소 인덱스 반환
+	print(cars.indexOf("페라리")); // 1
+	print(cars.indexOf("현대"));  // -1 (없는 요소면 -1 반환)
+	
 	// 길이
 	print(cars.length); // 2
 	
 	// 포함 여부 확인
 	pint(cars.contains("포르쉐")); // true
-
-
-
+	
+	// empty 확인
+	print(cars.isEmpty);    // false
+	print(cars.isNotEmpty); // true
 }
 ```
+
+
+---
+
+
+# 
 
 
