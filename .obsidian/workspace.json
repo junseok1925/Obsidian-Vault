@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIL,WIL/Dart 기초 문법/02. Dart 기본 문법 - 연산자(Operators).md",
+                "file": "TIL,WIL/Dart 기초 문법/조건문.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02. Dart 기본 문법 - 연산자(Operators)"
+              "title": "조건문"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 229.5
+    "width": 329.5
   },
   "right": {
     "id": "7afe4a8a56070175",
@@ -184,8 +184,9 @@
   },
   "active": "a9bed90a03e61bac",
   "lastOpenFiles": [
-    "TIL,WIL/Dart 기초 문법/01. Dart 기본 문법 - 변수.md",
-    "TIL,WIL/Dart 기초 문법/02. Dart 기본 문법 - 연산자(Operators).md",
+    "TIL,WIL/Dart 기초 문법/변수.md",
+    "TIL,WIL/Dart 기초 문법/연산자(Operators).md",
+    "TIL,WIL/Dart 기초 문법/조건문.md",
     "TIL,WIL/25.09/21-01. Firebase Firestore Project  (DataBase CRUD).md",
     "TIL,WIL/Dart 기초 문법",
     "TIL,WIL/25.09/19-02. TODO 앱   -  Todo 위젯 재사용 구현.md",
@@ -224,7 +225,6 @@
     "TIL,WIL/25.09/02-1.  Memory-matching-game App (위젯트리를 활용한 함수 사용 - countScore, tryCount).md",
     "TIL,WIL/25.09/16-01. 기능성 위젯 switch, slide, GestureDetector 위젯.md",
     "TIL,WIL/25.09/12-02. 기능성 위젯 Text 위젯.md",
-    "TIL,WIL/아티클  1일차 지속가능한 성장을 위해서는 어떤 마인드셋을 가지면 좋을까.md",
     "무제 1.base",
     "무제 2.base",
     "TIL,WIL/25.09/무제",
