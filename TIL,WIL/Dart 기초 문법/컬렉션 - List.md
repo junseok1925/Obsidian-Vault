@@ -94,7 +94,7 @@ void main() {
 ## 선언 방법
 
 ```dart
-// 명ㅅ적 타입 지정
+// 명시적 타입 지정
 Set<int> nums = {1,2,3};
 
 // 타입 추론 var사용
@@ -179,3 +179,36 @@ print(a.difference(b));   // {1, 2}
 
 # Map
 
+> Key - Value로 데이터를 저장하는 자료구조
+> List처럼 index가 아닌 Key로 Value를 찾는 구조
+
+## 선언 방법
+```dart
+// 명시적 선언
+Map<String, Int> human = {"강준석":29, "짱구":6};
+Map<String, Int> human = {"강준석":29, "짱구":"6살"};
+//키,값들이 선언된 값이 동일해야함
+
+// 타입 생략 -> 타입 추론 var 사용
+var human = human = {"강준석":29, "짱구":"6살"};
+// 타입추론의 경우 키,값들의 타입이 통일 되지 않아두됨
+
+```
+
+## 주요 특징
+
+1. Key 값 중복 불가
+```dart
+Map<String, Int> human = {"강준석":29, "짱구":6, "강준석":6};
+// value는 중복가능, key는 중복불가
+```
+
+2. Key, Value 타입 지정 가능
+```dart
+Map<int, String> idToName = {1: "철수", 2: "영희"};
+```
+
+3. **제네릭 생략 시 `dynamic`**
+```dart
+var mix = {1: "one", "two": 2}; // Key도 Value도 dynamic
+```
