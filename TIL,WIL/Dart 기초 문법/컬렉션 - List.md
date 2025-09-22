@@ -1,0 +1,69 @@
+### List
+
+>순서가 있는 자료 구조
+  다른 언어의 배열(Array)와 비슷
+  **중복 값 허용 됨**
+
+#### 선언 방법
+```dart
+// 명시적 타입 지정
+List<String> student = ["강준석","철수","영희","맹구"];
+
+// 타입 생략 -> 타입 추론 var 사용
+var nums = [1,2,3,4];
+```
+
+#### 주요 특징
+
+1. **중복 값 허용**
+```dart
+List<String> name = ["강준석","강준석","철수","맹구"];
+List<Int> nums = [1,1,2,2,3,3];
+var nums = [1,1,2,2,3,3];
+```
+
+2. 크기 가변적
+```dart
+List<String>name["강준석","철수"];
+name.add["영희"];
+print(name); // 결과 : 강준석, 철수, 영희
+```
+
+#### 주요 메서드
+
+```dart
+void main() {
+	List<String> cars = ["포르쉐", "페라리"];
+	
+	// 추가
+	cars.add("벤츠");
+	print(cars) // 포르쉐, 페라리, 벤츠
+	
+	// 여러 개 추가
+	cars.addAll(["벤츠","아우디"]);
+	print(cars) // 포르쉐, 페라리, 벤츠, 아우디
+	
+	// 특정 위치에 삽입
+	cars.insert(0,"벤츠");
+	print(cars); // 벤츠, 포르쉐, 페라리
+	
+	// 삭제
+	cars.remove("포르쉐");
+	print(cars); // 페라리
+	
+	// 인덱스로 삭제
+	cars.removeAt(0);
+	print(cars); // 페라리
+	
+	// 길이
+	print(cars.length); // 2
+	
+	// 포함 여부 확인
+	pint(cars.contains("포르쉐")); // true
+
+
+
+}
+```
+
+
