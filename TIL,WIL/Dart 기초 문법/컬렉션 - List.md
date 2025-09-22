@@ -109,8 +109,37 @@ print(cars)
 
 2. 중복 불가
 ```dart
-var cars = {"포르쉐","페라리","멕라렌"};
-
+var cars = {"포르쉐","페라리","포르쉐"};
+print(cars); // 포르쉐, 페라리
 ```
 
+## 주요 메서드
+
+```dart
+void main() {
+  Set<String> fruits = {"사과", "바나나"};
+
+  // 추가
+  fruits.add("포도");
+  print(fruits); // {사과, 바나나, 포도}
+
+  // 여러 개 추가
+  fruits.addAll({"복숭아", "딸기"});
+  print(fruits); // {사과, 바나나, 포도, 복숭아, 딸기}
+
+  // 삭제
+  fruits.remove("바나나");
+  print(fruits); // {사과, 포도, 복숭아, 딸기}
+
+  // 포함 여부
+  print(fruits.contains("포도")); // true
+
+  // 길이
+  print(fruits.length); // 4
+
+  // 비우기
+  fruits.clear();
+  print(fruits); // {}
+}
+```
 
