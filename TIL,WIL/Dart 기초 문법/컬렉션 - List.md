@@ -29,6 +29,13 @@ name.add["영희"];
 print(name); // 결과 : 강준석, 철수, 영희
 ```
 
+3. 다른 타입의 요소 넣기 가능 - var
+```dart
+var fruits = {'사과', '파인애플', '오렌지', 8};
+print(fruits.runtimeType);
+// _HashSet<Object>
+// String과 Int의 상위 클래스인 Object 출력 됨
+```
 ## 주요 메서드
 
 ```dart
@@ -113,6 +120,14 @@ var cars = {"포르쉐","페라리","포르쉐"};
 print(cars); // 포르쉐, 페라리
 ```
 
+3. 다른 타입의 요소 넣기 가능 - var
+```dart
+var fruits = {'사과', '파인애플', '오렌지', 8};
+print(fruits.runtimeType);
+// _HashSet<Object>
+// String과 Int의 상위 클래스인 Object 출력 됨
+
+```
 ## 주요 메서드
 
 ```dart
@@ -142,4 +157,25 @@ void main() {
   print(fruits); // {}
 }
 ```
+
+## 집합 연산 - Set 장점
+
+```dart
+var a = {1, 2, 3};
+var b = {3, 4, 5};
+
+// 합집합
+print(a.union(b));        // {1, 2, 3, 4, 5}
+
+// 교집합
+print(a.intersection(b)); // {3}
+
+// 차집합
+print(a.difference(b));   // {1, 2}
+
+```
+
+---
+
+# Map
 
