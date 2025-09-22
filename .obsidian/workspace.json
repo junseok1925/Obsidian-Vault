@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIL,WIL/Dart 기초 문법/반복문.md",
+                "file": "TIL,WIL/Dart 기초 문법/컬렉션 - List.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "반복문"
+              "title": "컬렉션 - List"
             }
           }
         ]
@@ -184,8 +184,9 @@
   },
   "active": "a9bed90a03e61bac",
   "lastOpenFiles": [
-    "TIL,WIL/Dart 기초 문법/조건문.md",
     "TIL,WIL/Dart 기초 문법/반복문.md",
+    "TIL,WIL/Dart 기초 문법/컬렉션 - List.md",
+    "TIL,WIL/Dart 기초 문법/조건문.md",
     "TIL,WIL/Dart 기초 문법/변수.md",
     "TIL,WIL/Dart 기초 문법/연산자(Operators).md",
     "TIL,WIL/25.09/21-01. Firebase Firestore Project  (DataBase CRUD).md",
@@ -224,7 +225,6 @@
     "TIL,WIL/Dart 기초",
     "TIL,WIL/25.09/02-2.  Memory-matching-game App (Class 객체).md",
     "TIL,WIL/25.09/02-1.  Memory-matching-game App (위젯트리를 활용한 함수 사용 - countScore, tryCount).md",
-    "TIL,WIL/25.09/16-01. 기능성 위젯 switch, slide, GestureDetector 위젯.md",
     "무제 1.base",
     "무제 2.base",
     "TIL,WIL/25.09/무제",
