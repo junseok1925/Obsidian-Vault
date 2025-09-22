@@ -128,6 +128,7 @@ print(fruits.runtimeType);
 // String과 Int의 상위 클래스인 Object 출력 됨
 
 ```
+
 ## 주요 메서드
 
 ```dart
@@ -157,6 +158,7 @@ void main() {
   print(fruits); // {}
 }
 ```
+
 
 ## 집합 연산 - Set 장점
 
@@ -210,5 +212,52 @@ Map<int, String> idToName = {1: "철수", 2: "영희"};
 
 3. **제네릭 생략 시 `dynamic`**
 ```dart
-var mix = {1: "one", "two": 2}; // Key도 Value도 dynamic
+var map1 = {"a": 1, "b": 2}; 
+// 전부 String-Int 구조라서 자동으로 Map<String, int>
+
+var map2 = {1: "one", "two": 2};
+// Key와 Value 타입이 섞여 있으므로 Map<dynamic, dynamic>
+```
+*타입 안정성이 깨지고, 컴파일 시점에서 오류를 못 잡고, 실행 중 오루가 나기도 해서 비권장*
+
+
+## 주요 메서드
+
+```dart
+void main() {
+  // 초기 Map 선언
+  Map<String, int> scores = {"국어": 90, "수학": 85};
+
+  print("초기 값: $scores");
+
+  //  putIfAbsent → 키 없으면 추가
+  scores.putIfAbsent("영어", () => 80);
+  print("putIfAbsent 후: $scores");
+
+  //  update → 키 있으면 값 갱신
+  scores.update("국어", (old) => old + 5); // 90 → 95
+  print("update 후: $scores");
+
+  //  remove → 특정 key 삭제
+  scores.remove("수학");
+  print("remove 후: $scores");
+
+  //  containsKey / containsValue
+  print("국어 key 있음? ${scores.containsKey("국어")}");
+  print("점수 80 있음? ${scores.containsValue(80)}");
+
+  //  keys / values
+  print("keys: ${scores.keys}");
+  print("values: ${scores.values}");
+
+  //  forEach
+  scores.forEach((subject, score) {
+    print("$subject 과목 점수: $score");
+  });
+
+  //  clear → 전체 삭제
+  scores.clear();
+
+}
+
 ```
