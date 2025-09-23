@@ -68,10 +68,56 @@ void main(){
 ```dart
 void main() {
 	
-  List nums = [1, 2, 3, 4, 5];
+  List nums = [1, 2, 3, 4, 5]; // dynamic 가변 객체 어떤 타입이든 추가 가능
   nums.add("abc");
 
-  print(nums);
+  print(nums); //[1, 2, 3, 4, 5, abc] -> 숫자만 넣고싶을 때 String도 들어가게 됨
 }
 
 ```
+
+- **제네릭이 있는 경우**
+```dart
+void main(){
+	List<Int> nums = [1,2,3,4,5];
+	nums.add("abc")
+	
+	print(nums); // 오류발생 (타입 안전성 확보됨)
+}
+```
+
+### 제네릭 함수
+```dart
+T getFirst<T>(List<T> items) {
+	return items[0];
+}
+
+void main(){
+	print(getFirst<int>([1,2,3])); // 1
+	print(getFirst<String>([a,b,c])); // a
+}
+```
+- `T` 는 타입 매개변수 : 함수 호출 시 타입을 지정할 수 있음
+
+### 제네릭 클래스
+```dart
+class Box<T> {
+	T value;
+	Box(This.value);
+}
+
+void main(){
+	var intBox = Box<int>(123);
+	var stringBox = Box<String?(abc);
+	
+	print(intBox.value); // 123
+	print(stringBox.value); //abcs
+}
+
+
+```
+
+## 정리
+
+- 함수 : 작업을 묶어서 재사용 ( 매개변수, 리턴, 화살표 함수, 선택/명명 매개변수 가능 )
+- 제네릭 : 타입을 일반화시켜 코드 재사용 + 타입 안전성 확보 ( `List<T>`,`Map<T>`, 제네릭 함수 / 클래스 )
