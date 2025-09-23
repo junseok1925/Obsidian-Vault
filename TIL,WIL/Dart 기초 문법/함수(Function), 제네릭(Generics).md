@@ -66,6 +66,12 @@ void main(){
 
 - **제네릭이 없는 경우**
 ```dart
-List nums= [1,2,3,4,5];
-nums.add("abc"); // 숫자만 넣
+void main() {
+	
+  List nums = [1, 2, 3, 4, 5];
+  nums.add("abc");
+
+  print(nums);
+}
+
 ```
