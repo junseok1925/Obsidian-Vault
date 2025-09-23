@@ -306,9 +306,21 @@ void main() {
 ## 주요 특징
 
 ```dart
-// 정해진 값만 사용 가능
+enum Weekday { monday, tuesday, wednesday, thursday, friday, saturday, sunday }
+
+//1. 정해진 값만 사용 가능
 Weekday today = Weekday.monday; // 가능
-Weekday today = "월요일"; // 붕가능
+Weekday today = "월요일"; // 불가능 - 문자열 직접 대입 불가
+
+//2. .value : 열거형의 모든 값 리스트 반환
+print(Weekday.value); // [monday...sunday]
+
+//3. .index : 요소의 인덱스 반환
+print(Weekday.wednesday.index); //2
+
+//4. .name : 문자열 이름 반환
+print(Weekday.saturday.name); // saturday
+
 
 
 
