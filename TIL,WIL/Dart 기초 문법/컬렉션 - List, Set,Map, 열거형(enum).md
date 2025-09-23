@@ -272,3 +272,44 @@ void main() {
 | **List** | 순서 있음       | o                   | 인덱스 (`list[0]`)              |
 | **Set**  | 순서 없음       | x                   | 직접 포함 여부 (`set.contains(값)`) |
 | **Map**  | key-value 쌍 | key (x) / value (o) | key (`map["key"]`)           |
+
+---
+
+# 열거형
+
+- 상수들의 집합을 표현할 때 사용
+- 코드의 가독성을 높이고 의미 있는 값을 정의할 수 있다
+- ex) 요일, 상태, 색상 등 한정된 값을 표현할 때 유용
+
+## 기본 사용법
+
+```dart
+// 열거형 정의
+enum Weekday { monday, tuesday, wednesday, thursday, friday, saturday, sunday }
+
+void main() {
+  // 열거형 사용
+  Weekday today = Weekday.monday;
+
+  // 출력
+  print(today); // Weekday.monday
+  print(today.name); // monday
+
+  // 비교
+  if (today == Weekday.monday) {
+    print("오늘은 월요일");
+  }
+}
+
+```
+
+## 주요 특징
+
+```dart
+// 정해진 값만 사용 가능
+Weekday today = Weekday.monday; // 가능
+Weekday today = "월요일"; // 붕가능
+
+
+
+```
