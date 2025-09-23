@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e175781df9b43f33",
+        "id": "b15e63bc04df2207",
         "type": "tabs",
         "children": [
           {
-            "id": "a9bed90a03e61bac",
+            "id": "b0f9ca4de8970314",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -182,11 +182,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a9bed90a03e61bac",
+  "active": "b0f9ca4de8970314",
   "lastOpenFiles": [
     "TIL,WIL/Dart 기초 문법/함수(Function), 제네릭(Generics).md",
-    "TIL,WIL/Dart 기초 문법/함수형 프로그래밍( 형변환,  고차 함수 ).md",
     "TIL,WIL/Dart 기초 문법/컬렉션 - List, Set, Map, 열거형(enum).md",
+    "TIL,WIL/Dart 기초 문법/함수형 프로그래밍( 형변환,  고차 함수 ).md",
     "TIL,WIL/Dart 기초 문법/연산자(Operators).md",
     "TIL,WIL/Dart 기초 문법/반복문.md",
     "TIL,WIL/Dart 기초 문법/조건문.md",
