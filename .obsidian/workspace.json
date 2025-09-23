@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIL,WIL/Dart 기초 문법/컬렉션 - List, Set, Map, 열거형(enum).md",
+                "file": "TIL,WIL/Dart 기초 문법/무제.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "컬렉션 - List, Set, Map, 열거형(enum)"
+              "title": "무제"
             }
           }
         ]
@@ -185,6 +185,7 @@
   "active": "a9bed90a03e61bac",
   "lastOpenFiles": [
     "TIL,WIL/Dart 기초 문법/함수(Function), 제네릭(Generics).md",
+    "TIL,WIL/Dart 기초 문법/무제.md",
     "TIL,WIL/Dart 기초 문법/컬렉션 - List, Set, Map, 열거형(enum).md",
     "TIL,WIL/Dart 기초 문법/연산자(Operators).md",
     "TIL,WIL/Dart 기초 문법/반복문.md",
@@ -224,7 +225,6 @@
     "무제.base",
     "TIL,WIL/Dart 기초/제너릭(Generic).md",
     "TIL,WIL/Dart 기초",
-    "TIL,WIL/25.09/02-2.  Memory-matching-game App (Class 객체).md",
     "무제 1.base",
     "무제 2.base",
     "TIL,WIL/25.09/무제",
