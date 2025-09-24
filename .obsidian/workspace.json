@@ -179,8 +179,7 @@
       "daily-notes:오늘의 일일 노트 열기": false,
       "templates:템플릿 삽입": false,
       "command-palette:명령어 팔레트 열기": false,
-      "obsidian-git:Open Git source control": false,
-      "markdown-importer:마크다운 형식 불러오기 열기": false
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "af60015aa4fab1fa",
