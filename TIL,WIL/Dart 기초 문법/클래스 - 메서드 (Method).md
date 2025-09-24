@@ -133,3 +133,55 @@ void main(){
 	person.sayAge(); //  sayAge은 인스턴스메서드라 객체를 생성해서 호출가능
 }
 ```
+
+
+---
+
+## 차이점 정리
+
+```dart
+class Person {
+  // 인스턴스 변수
+  String name;
+  // 정적 변수
+  static int count = 0;
+
+  // 생성자
+  Person(this.name) {
+    count++; // 객체가 생성될 때마다 count 증가
+  }
+
+  // 인스턴스 메서드 (객체 소속)
+  void sayName() {
+    print("내 이름은 $name");
+  }
+
+  // 정적 메서드 (클래스 소속)
+  static void showCount() {
+    print("현재 만들어진 사람 객체 수: $count");
+  }
+}
+
+void main() {
+  // 객체 생성
+  var p1 = Person("준석");
+  var p2 = Person("철수");
+
+  // 인스턴스 메서드 사용 → 객체 필요
+  p1.sayName(); // 내 이름은 준석
+  p2.sayName(); // 내 이름은 철수
+
+  // 정적 메서드 사용 → 클래스 이름으로 호출
+  Person.showCount(); // 현재 만들어진 사람 객체 수: 2
+}
+
+```
+
+
+|구분|인스턴스 메서드|정적 메서드|
+|---|---|---|
+|소속|객체|클래스|
+|호출 방법|`객체명.메서드()`|`클래스명.메서드()`|
+|인스턴스 변수 접근|가능 (`this.name`)|불가능|
+|정적 변수 접근|가능|가능|
+|목적|객체마다 다른 동작|공통 동작 (객체 수 세기 등)|
