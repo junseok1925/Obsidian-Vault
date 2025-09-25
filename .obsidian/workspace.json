@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "a64ea9bd93f25fdf",
+        "id": "d58423ab6fc5e569",
         "type": "tabs",
         "children": [
           {
-            "id": "9df3d91c5ddb78cf",
+            "id": "b50823c31cc709e4",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -182,10 +182,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9df3d91c5ddb78cf",
+  "active": "b50823c31cc709e4",
   "lastOpenFiles": [
-    "Pasted image 20250925172107.png",
     "Pasted image 20250925172049.png",
+    "Pasted image 20250925180839.png",
+    "Pasted image 20250925181020.png",
+    "Pasted image 20250828174901.png",
+    "Pasted image 20250902153158.png",
+    "image 2.png",
+    "image 1.png",
+    "Pasted image 20250919155649.png",
+    "TIL,WIL/Dart 기초 문법/과제.md",
+    "Pasted image 20250925172107.png",
     "TIL,WIL/Dart 기초 문법/반복문.md",
     "TIL,WIL/Dart 기초 문법/클래스 - 생성자 (Construtor).md",
     "TIL,WIL/Dart 기초 문법/클래스 - 속성.md",
@@ -196,7 +204,6 @@
     "TIL,WIL/Dart 기초 문법/연산자(Operators).md",
     "TIL,WIL/Dart 기초 문법/변수.md",
     "TIL,WIL/아티클  1일차 지속가능한 성장을 위해서는 어떤 마인드셋을 가지면 좋을까.md",
-    "TIL,WIL/Dart 기초 문법/과제.md",
     "TIL,WIL/Dart 기초/Widget, MaterialApp, Scaffold, AppBar, Text, Image, Icon.md",
     "TIL,WIL/Dart 기초/제너릭(Generic).md",
     "TIL,WIL/Dart 기초/async await, Future, nullable, 예외처리, enum.md",
@@ -207,20 +214,13 @@
     "Pasted image 20250921195654.png",
     "Pasted image 20250921195645.png",
     "TIL,WIL/25.09/19-03. TODO 앱 - StatefulWidget CRUD 구현.md",
-    "Pasted image 20250920010416.png",
     "TIL,WIL/25.09/19-01. TODO 앱   - 초기 레이아웃, TextField 위젯 구현.md",
-    "Pasted image 20250919195213.png",
-    "Pasted image 20250919192032.png",
     "TIL,WIL/25.09/16-02 알람 앱 화면 구성 연습.md",
     "TIL,WIL/아티클 4일차 개발자를 위한 정보 검색 팁.md",
     "TIL,WIL/아티클 5일차 시작하는 개발자를 위한....md",
     "무제.md",
-    "Pasted image 20250919190201.png",
     "TIL,WIL/Dart 기초/ToDo 앱.md",
     "TIL,WIL/Dart 기초/ButtonNavigationBar, indexedStack.md",
-    "Pasted image 20250919174850.png",
-    "Pasted image 20250919173540.png",
-    "Pasted image 20250919155649.png",
     "무제 3.base",
     "무제 4.base",
     "무제.base",
