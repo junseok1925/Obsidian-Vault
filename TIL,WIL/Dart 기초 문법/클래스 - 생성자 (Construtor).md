@@ -133,3 +133,48 @@ void main() {
 
 # 제네릭 클래스 (Generic Class)
 
+**제네릭이란?**
+- 데이터 타입을 일반화하여 재사용성을 높이는 방법
+- 클래스나 메서드를 정의할 때, 구체적인 타입을 미리 정하지 않고, 나중에 객체를 생성할 때 타입을 지정하는 방식
+- **즉, 타입을 변수처럼 쓰는 것**
+
+```dart
+// 제네릭 클래스 정의
+class Box<T>{
+	T value;
+	
+	Box(this.value);
+	
+	void showValue(){
+		print('저장된 값 : $value');
+	}
+}
+
+void main(){
+	//int 타입 박스
+	Box<int> intBox = Box<int>(123);
+	intBox.showValue(); // 저장된 값 : 123
+	
+	//String  타입 박스
+	Box<String> strBox = Box<String>('문자열');
+	strBox.showValue(); // 저장된 값 : 문자열
+	
+	//double 타입 박스
+	Box<Double> dobBox = Box<Double>(3.14);
+	dobBox.showValue(); // 저장된 값: 3.14
+}
+```
+
+**특징**
+1. **타입 안정성 보장** : 타입이 저애져 있기 때문에, 잘못된 타입을 넣을 수 없음
+```dart
+Box<int> intBox = Box<int>(123);
+intBox.value = "문자열"; // error
+intBox.value = 456; // ok
+```
+
+2. **재사용성** : 같은 Box 클래스를 int, String, Double 등 여러 타입에서 사용 가능 
+   (타입마다 클래스를 다시 만들 필요 없음)
+3. **코드 가독성과 유지보수성에 좋음**
+   (타입이 명확하기 지정되니까)
+
