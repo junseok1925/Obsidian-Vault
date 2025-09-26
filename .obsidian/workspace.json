@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tip or anyting/Git Commit Message Convention.md",
+                "file": "TIL,WIL/Dart 기초 문법/객체 지향과 상속.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Git Commit Message Convention"
+              "title": "객체 지향과 상속"
             }
           }
         ]
