@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIL,WIL/Dart 기초 문법/객체 지향과 상속.md",
+                "file": "TIL,WIL/Dart 기초 문법/예외 (Exception).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "객체 지향과 상속"
+              "title": "예외 (Exception)"
             }
           }
         ]
@@ -184,6 +184,9 @@
   },
   "active": "cceb12cf5813be1a",
   "lastOpenFiles": [
+    "TIL,WIL/Dart 기초 문법/객체 지향과 상속.md",
+    "TIL,WIL/Dart 기초 문법/예외 (Exception).md",
+    "TIL,WIL/Dart 기초/무제.md",
     "TIL,WIL/Dart 기초 문법/과제.md",
     "TIL,WIL/Dart 기초 문법/조건문.md",
     "TIL,WIL/Dart 기초 문법/연산자(Operators).md",
@@ -196,7 +199,6 @@
     "TIL,WIL/아티클  1일차 지속가능한 성장을 위해서는 어떤 마인드셋을 가지면 좋을까.md",
     "TIL,WIL/Dart 기초 문법/반복문.md",
     "TIL,WIL/Dart 기초/Widget, MaterialApp, Scaffold, AppBar, Text, Image, Icon.md",
-    "TIL,WIL/Dart 기초 문법/객체 지향과 상속.md",
     "TIL,WIL/무제.md",
     "tip or anyting/Git Commit Message Convention.md",
     "tip or anyting",
@@ -220,8 +222,6 @@
     "TIL,WIL/25.09/19-01. TODO 앱   - 초기 레이아웃, TextField 위젯 구현.md",
     "TIL,WIL/25.09/16-02 알람 앱 화면 구성 연습.md",
     "TIL,WIL/아티클 4일차 개발자를 위한 정보 검색 팁.md",
-    "TIL,WIL/아티클 5일차 시작하는 개발자를 위한....md",
-    "무제.md",
     "무제 3.base",
     "무제 4.base",
     "무제.base",
