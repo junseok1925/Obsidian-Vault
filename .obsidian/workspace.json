@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5f1231b45e80cff8",
+        "id": "742b83419f7fdb13",
         "type": "tabs",
         "children": [
           {
-            "id": "cceb12cf5813be1a",
+            "id": "8762837060a7388c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -182,7 +182,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cceb12cf5813be1a",
+  "active": "8762837060a7388c",
   "lastOpenFiles": [
     "TIL,WIL/Dart 기초 문법/객체 지향과 상속.md",
     "TIL,WIL/Dart 기초 문법/예외 (Exception).md",
