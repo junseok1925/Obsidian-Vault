@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIL,WIL/Dart 기초 문법/클래스 - 속성 (2).md",
+                "file": "TIL,WIL/Dart 기초 문법/클래스 - 속성 (복습).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "클래스 - 속성 (2)"
+              "title": "클래스 - 속성 (복습)"
             }
           }
         ]
@@ -185,7 +185,7 @@
   "active": "8762837060a7388c",
   "lastOpenFiles": [
     "TIL,WIL/Dart 기초 문법/함수(Function), 제네릭(Generics).md",
-    "TIL,WIL/Dart 기초 문법/클래스 - 속성 (2).md",
+    "TIL,WIL/Dart 기초 문법/클래스 - 속성 (복습).md",
     "TIL,WIL/Dart 기초 문법/클래스 - 생성자 (Construtor).md",
     "TIL,WIL/Dart 기초 문법/클래스 - 메서드 (Method).md",
     "TIL,WIL/Dart 기초 문법/클래스 - 속성.md",
