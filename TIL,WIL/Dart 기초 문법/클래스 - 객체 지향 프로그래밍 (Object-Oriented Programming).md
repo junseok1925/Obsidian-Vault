@@ -73,3 +73,26 @@ void main(){
 }
 ```
 
+---
+
+## 3. 추상화
+```dart
+abstract class Shape {
+  double getArea();
+}
+
+class Circle extends Shape {
+  double radius;
+  Circle(this.radius);
+
+  @override
+  double getArea() => 3.14 * radius * radius;
+}
+
+void main() {
+  Circle c = Circle(5.0);
+  double area = c.getArea();
+  print(area);
+}
+
+```
