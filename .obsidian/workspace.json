@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tip or anyting/10월 1일 강의.md",
+                "file": "TIL,WIL/Dart 기초 문법/클래스 - 메서드 (복습).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "10월 1일 강의"
+              "title": "클래스 - 메서드 (복습)"
             }
           }
         ]
@@ -184,8 +184,10 @@
   },
   "active": "8762837060a7388c",
   "lastOpenFiles": [
-    "tip or anyting/9월 30일 강의.md",
+    "TIL,WIL/Dart 기초 문법/클래스 - 속성 (복습).md",
+    "TIL,WIL/Dart 기초 문법/클래스 - 메서드 (복습).md",
     "tip or anyting/10월 1일 강의.md",
+    "tip or anyting/9월 30일 강의.md",
     "TIL,WIL/Dart 기초 문법/클래스 - 생성자 (Construtor).md",
     "TIL,WIL/Dart 기초 문법/클래스 - 메서드 (Method).md",
     "TIL,WIL/Dart 기초 문법/컬렉션 - List, Set, Map, 열거형(enum).md",
@@ -193,7 +195,6 @@
     "TIL,WIL/Dart 기초 문법/변수.md",
     "TIL,WIL/Dart 기초 문법/반복문.md",
     "TIL,WIL/Dart 기초 문법/클래스 - 속성.md",
-    "TIL,WIL/Dart 기초 문법/클래스 - 속성 (복습).md",
     "TIL,WIL/Dart 기초/컬렉션 (collection).md",
     "TIL,WIL/Dart 기초/Column, Row, SizedBox, Container.md",
     "TIL,WIL/Dart 기초/Dart 프로젝트 구조 및 기본문법, 함수, 조건문, 클래스.md",
@@ -209,7 +210,6 @@
     "TIL,WIL/Dart 기초 문법/객체 지향과 상속.md",
     "tip or anyting/Git Commit Message Convention.md",
     "TIL,WIL/Dart 기초 문법/함수형 프로그래밍( 형변환,  고차 함수 ).md",
-    "TIL,WIL/Dart 기초/무제.md",
     "tip or anyting",
     "Pasted image 20250925172049.png",
     "Pasted image 20250925180839.png",
