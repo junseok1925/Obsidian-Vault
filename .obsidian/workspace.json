@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIL,WIL/Dart 기초 문법/클래스 - 생성자 (Construtor).md",
+                "file": "tip or anyting/10월 1일 강의.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "클래스 - 생성자 (Construtor)"
+              "title": "10월 1일 강의"
             }
           }
         ]
@@ -184,12 +184,14 @@
   },
   "active": "8762837060a7388c",
   "lastOpenFiles": [
+    "tip or anyting/9월 30일 강의.md",
+    "tip or anyting/10월 1일 강의.md",
+    "TIL,WIL/Dart 기초 문법/클래스 - 생성자 (Construtor).md",
     "TIL,WIL/Dart 기초 문법/클래스 - 메서드 (Method).md",
     "TIL,WIL/Dart 기초 문법/컬렉션 - List, Set, Map, 열거형(enum).md",
     "TIL,WIL/Dart 기초 문법/성적 분석 프로그램.md",
     "TIL,WIL/Dart 기초 문법/변수.md",
     "TIL,WIL/Dart 기초 문법/반복문.md",
-    "TIL,WIL/Dart 기초 문법/클래스 - 생성자 (Construtor).md",
     "TIL,WIL/Dart 기초 문법/클래스 - 속성.md",
     "TIL,WIL/Dart 기초 문법/클래스 - 속성 (복습).md",
     "TIL,WIL/Dart 기초/컬렉션 (collection).md",
@@ -203,13 +205,11 @@
     "TIL,WIL/Dart 기초 문법/조건문.md",
     "TIL,WIL/Dart 기초/async await, Future, nullable, 예외처리, enum.md",
     "TIL,WIL/Dart 기초/제너릭(Generic).md",
-    "tip or anyting/9월 30일 강의.md",
     "TIL,WIL/Dart 기초 문법/과제.md",
     "TIL,WIL/Dart 기초 문법/객체 지향과 상속.md",
     "tip or anyting/Git Commit Message Convention.md",
     "TIL,WIL/Dart 기초 문법/함수형 프로그래밍( 형변환,  고차 함수 ).md",
     "TIL,WIL/Dart 기초/무제.md",
-    "TIL,WIL/아티클  1일차 지속가능한 성장을 위해서는 어떤 마인드셋을 가지면 좋을까.md",
     "tip or anyting",
     "Pasted image 20250925172049.png",
     "Pasted image 20250925180839.png",
