@@ -96,3 +96,27 @@ void main() {
 }
 
 ```
+- `Shape` 는 추상 클래스
+- `double getArea();` 는  메서드 시그니처만 정의 → 자식 클래스에서 반드시 구현되어야함
+- `Circle`은 `Shape`를 상속 → 추상 메서드 `getArea()` 구현 필수
+- `radius` 속성 정의
+- 생성자 `Circle(this.radius)` → 객체 생성 시 `radius` 초기화
+- `getArea()` @override → 원 넓이 계산
+---
+
+## 4.  캡슐화
+객체의 속성을 외부에서 직접 접근하지 못하게 하고,
+메서드를 통해 안전하게 접근하도록 제한
+`Dart`에서는 `_` (언더 바) 접두어로 private 처리 가능
+```dart
+class BankAccount {
+  double _balance = 0;
+
+  void deposit(double amount) {
+    _balance += amount;
+  }
+
+  double get balance => _balance;
+}
+
+```
