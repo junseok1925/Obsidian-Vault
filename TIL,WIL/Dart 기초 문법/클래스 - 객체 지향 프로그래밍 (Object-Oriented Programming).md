@@ -10,7 +10,7 @@ class Person {
   int age;
 
   Person(this.name, this.age) {
-    print("Person 생성: $name, $age"); //Person 생성: 준석, 20
+    print("Person 생성: $name, $age"); //1.Person 생성: 준석, 20
   }
 }
 
@@ -19,7 +19,7 @@ class Student extends Person {
 
   // Student 생성자
   Student(String name, int age, this.school) : super(name, age) {
-    print("Student 생성: $school"); //Student 생성: 고등학교
+    print("Student 생성: $school"); //2.Student 생성: 고등학교
   }
 }
 
@@ -31,3 +31,18 @@ void main() {
 
 }
 ```
+
+- `Student` 생성자 호출 → 매개변수 `"준석", 20, "고등학교"` 전달
+- `: super(name, age)` → 부모(Person) 생성자 호출
+    - 부모 클래스 Person의 `name`과 `age`를 `"준석"`과 `20`으로 초기화
+- 부모 생성자 내부에서 `print("Person 생성: $name, $age");` 실행
+    - 출력값: `Person 생성: 준석, 20`
+- 부모 생성자 종료 → 자식 생성자 본문 실행
+    - 자식 속성 `school` 초기화 및 출력
+---
+
+## 2. 다형성
+
+
+
+
