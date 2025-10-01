@@ -110,13 +110,51 @@ void main() {
 `Dart`에서는 `_` (언더 바) 접두어로 private 처리 가능
 ```dart
 class BankAccount {
+  // 1. private 속성: 외부에서 직접 접근 불가
   double _balance = 0;
 
+  // 2. 입금 메서드: 안전하게 값 변경
   void deposit(double amount) {
-    _balance += amount;
+    if (amount > 0) {
+      _balance += amount;
+      print("$amount 입금 완료. 현재 잔액: $_balance");
+    } else {
+      print("입금 금액은 0보다 커야 합니다.");
+    }
   }
 
+  // 3. 출금 메서드: 안전하게 값 변경
+  void withdraw(double amount) {
+    if (amount > 0 && amount <= _balance) {
+      _balance -= amount;
+      print("$amount 출금 완료. 현재 잔액: $_balance");
+    } else {
+      print("출금 불가. 잔액 부족 또는 잘못된 금액.");
+    }
+  }
+
+  // 4. 잔액 조회: 읽기 전용
   double get balance => _balance;
 }
+
+void main() {
+  // 객체 생성
+  BankAccount account = BankAccount();
+
+  // 입금
+  account.deposit(1000); // 1000 입금 완료. 현재 잔액: 1000.0
+  account.deposit(-500); // 입금 금액은 0보다 커야 합니다.
+
+  // 출금
+  account.withdraw(300); // 300 출금 완료. 현재 잔액: 700.0
+  account.withdraw(1000); // 출금 불가. 잔액 부족 또는 잘못된 금액.
+
+  // 잔액 조회
+  print("최종 잔액: ${account.balance}"); // 최종 잔액: 700.0
+
+  // 직접 접근 불가
+  // account._balance = 100000; // ❌ 오류, _balance는 private
+}
+
 
 ```
