@@ -42,7 +42,34 @@ void main() {
 ---
 
 ## 2. 다형성
+- 같은 이름의 메서드가 클래스마다 다르게 동작 가능
+- `override`
+```dart
+class Animal {
+  void speak() {
+    print("...");
+  }
+}
 
+class Dog extends Animal {
+  @override
+  void speak() {
+    print("멍멍");
+  }
+}
+class Cat extends Animal {
+  @override
+  void speak() {
+    print("야옹");
+  }
+}
 
-
+void main(){
+	Dog dog = Dog();
+	Cat cat = Cat();
+	
+	dog.speak(); //멍멍
+	cat.speak(); //야옹
+}
+```
 
