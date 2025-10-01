@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIL,WIL/Dart 기초 문법/클래스 - 상속(복습).md",
+                "file": "TIL,WIL/Dart 기초 문법/클래스 - 객체 지향 프로그래밍 (Object-Oriented Programming).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "클래스 - 상속(복습)"
+              "title": "클래스 - 객체 지향 프로그래밍 (Object-Oriented Programming)"
             }
           }
         ]
@@ -184,8 +184,9 @@
   },
   "active": "8762837060a7388c",
   "lastOpenFiles": [
-    "tip or anyting/9월 30일 강의.md",
     "TIL,WIL/Dart 기초 문법/클래스 - 상속(복습).md",
+    "TIL,WIL/Dart 기초 문법/클래스 - 객체 지향 프로그래밍 (Object-Oriented Programming).md",
+    "tip or anyting/9월 30일 강의.md",
     "tip or anyting/10월 1일 강의.md",
     "TIL,WIL/Dart 기초 문법/클래스 - 메서드 (복습).md",
     "TIL,WIL/Dart 기초 문법/클래스 - 생성자 (Construtor).md",
@@ -209,7 +210,6 @@
     "TIL,WIL/Dart 기초/제너릭(Generic).md",
     "TIL,WIL/Dart 기초 문법/과제.md",
     "TIL,WIL/Dart 기초 문법/객체 지향과 상속.md",
-    "tip or anyting/Git Commit Message Convention.md",
     "tip or anyting",
     "Pasted image 20250925172049.png",
     "Pasted image 20250925180839.png",
