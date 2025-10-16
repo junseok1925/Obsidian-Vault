@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIL,WIL/25.10/03. flutter 기초 ( movie reservation app ).md",
+                "file": "TIL,WIL/25.10/02. flutter 기초 ( Recipe App).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03. flutter 기초 ( movie reservation app )"
+              "title": "02. flutter 기초 ( Recipe App)"
             }
           }
         ],
@@ -199,12 +199,13 @@
   },
   "active": "b880f2f17f9008f6",
   "lastOpenFiles": [
+    "TIL,WIL/25.10/01. flutter 기초 (Store App).md",
+    "TIL,WIL/25.10/03. flutter 기초 ( movie reservation app - 영화 좌석 예매 앱).md",
+    "Pasted image 20251016235340.png",
     "Pasted image 20251016171026.png",
     "Pasted image 20251016171021.png",
     "Pasted image 20251016171002.png",
     "TIL,WIL/25.10/02. flutter 기초 ( Recipe App).md",
-    "TIL,WIL/25.10/03. flutter 기초 ( movie reservation app ).md",
-    "TIL,WIL/25.10/01. flutter 기초 (Store App).md",
     "Pasted image 20251016165746.png",
     "Pasted image 20251015200153.png",
     "Pasted image 20251013184819.png",
@@ -236,8 +237,6 @@
     "Pasted image 20250925172049.png",
     "Pasted image 20250925180839.png",
     "Pasted image 20250925181020.png",
-    "Pasted image 20250828174901.png",
-    "Pasted image 20250902153158.png",
     "TIL,WIL/Dart 기초 문법",
     "무제 3.base",
     "무제 4.base",
