@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tip or anyting/Git Commit Message Convention.md",
+                "file": "TIL,WIL/shopping_App/트러블 슈팅.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Git Commit Message Convention"
+              "title": "트러블 슈팅"
             }
           }
         ],
@@ -199,6 +199,9 @@
   },
   "active": "b880f2f17f9008f6",
   "lastOpenFiles": [
+    "tip or anyting/Git Commit Message Convention.md",
+    "TIL,WIL/shopping_App/트러블 슈팅.md",
+    "TIL,WIL/shopping_App",
     "TIL,WIL/25.10/04. flutter 기초 (BMI App).md",
     "TIL,WIL/25.10/03. flutter 기초 ( movie reservation app - 영화 좌석 예매 앱).md",
     "Pasted image 20250919155649.png",
@@ -219,7 +222,6 @@
     "TIL,WIL/25.10",
     "TIL,WIL/Dart 기초 문법/성적 분석 프로그램.md",
     "TIL,WIL/Dart 기초 문법/과제.md",
-    "tip or anyting/Git Commit Message Convention.md",
     "GEOMEX 교육.md",
     "옵시디언 github 연동 테스트 페이지.md",
     "TIL,WIL/Dart 기초 문법/객체 지향과 상속.md",
@@ -243,7 +245,6 @@
     "무제.base",
     "TIL,WIL/Dart 기초",
     "무제 1.base",
-    "무제 2.base",
     "무제.canvas"
   ]
 }
