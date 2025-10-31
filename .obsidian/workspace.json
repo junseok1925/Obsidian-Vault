@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIL,WIL/shopping_App/트러블 슈팅.md",
+                "file": "TIL,WIL/flutter 숙련/무제.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "트러블 슈팅"
+              "title": "무제"
             }
           }
         ],
@@ -199,11 +199,13 @@
   },
   "active": "b880f2f17f9008f6",
   "lastOpenFiles": [
+    "TIL,WIL/shopping_App/트러블 슈팅.md",
+    "TIL,WIL/flutter 숙련/무제.md",
+    "TIL,WIL/flutter 숙련",
     "Pasted image 20251029193859.png",
     "Pasted image 20251029192156.png",
     "Pasted image 20251029192118.png",
     "tip or anyting/Git Commit Message Convention.md",
-    "TIL,WIL/shopping_App/트러블 슈팅.md",
     "TIL,WIL/shopping_App",
     "TIL,WIL/25.10/04. flutter 기초 (BMI App).md",
     "TIL,WIL/25.10/03. flutter 기초 ( movie reservation app - 영화 좌석 예매 앱).md",
@@ -215,7 +217,6 @@
     "README.md",
     "Pasted image 20251017182952.png",
     "Pasted image 20251017182817.png",
-    "Pasted image 20251016171021.png",
     "tip or anyting/10월 17일.md",
     "TIL,WIL/25.10/02. flutter 기초 ( Recipe App).md",
     "TIL,WIL/25.10/01. flutter 기초 (Store App).md",
@@ -244,7 +245,6 @@
     "무제 4.base",
     "무제.base",
     "TIL,WIL/Dart 기초",
-    "무제 1.base",
     "무제.canvas"
   ]
 }
