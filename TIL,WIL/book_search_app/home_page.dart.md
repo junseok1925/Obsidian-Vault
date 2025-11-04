@@ -84,7 +84,11 @@ class _HomePageState extends State<HomePage> {
                 showModalBottomSheet(
                   context: context,
                   builder: (context) {
-                    return Text('qwe');
+                    return Container(
+                      width: double.infinity, // 가로 최대한
+                      height: 300,
+                      child: Text('qwe'),
+                    );
                   },
                 );
               },
@@ -96,6 +100,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
+
 
 ```
 
