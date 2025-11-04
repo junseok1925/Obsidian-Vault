@@ -5,6 +5,7 @@
 
 ```dart
 import 'package:flutter/material.dart';
+import 'package:flutter_book_search_app/ui/home/widgets/home_bottom_sheet.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -80,16 +81,11 @@ class _HomePageState extends State<HomePage> {
           itemBuilder: (context, index) {
             return GestureDetector(
               onTap: () {
-                // 하단 슬라이드 모달 시트
+                // 하단 슬라이드 모달 시트는 따로 home_bottom_sheet.dart 에서 관리
                 showModalBottomSheet(
                   context: context,
                   builder: (context) {
-                  //  해당 부분 따로 위젯파일로 뺄꺼임
-                    return Container(
-                      width: double.infinity, // 가로 최대한
-                      height: 300,
-                      child: Text('qwe'),
-                    );
+                    return HomeBottomSheet();
                   },
                 );
               },
