@@ -84,6 +84,7 @@ class _HomePageState extends State<HomePage> {
                 showModalBottomSheet(
                   context: context,
                   builder: (context) {
+                  //  해당 부분 따로 위젯파일로 뺄꺼임
                     return Container(
                       width: double.infinity, // 가로 최대한
                       height: 300,
