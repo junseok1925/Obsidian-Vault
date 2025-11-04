@@ -67,19 +67,20 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
         ),
+        // 격자로 아이템을 배치
         body: GridView.builder(
           padding: EdgeInsets.all(20),
-          itemCount: 10,
+          itemCount: 10, // 아이템 갯수
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 3,
-            childAspectRatio: 3 / 4,
-            crossAxisSpacing: 10,
-            mainAxisSpacing: 10,
+            crossAxisCount: 3, // 한 줄에 배치할 아이템 갯수
+            childAspectRatio: 3 / 4, // 아이템 가로 세로 비율
+            crossAxisSpacing: 10, // 가로 간격 10
+            mainAxisSpacing: 10, // 세로 간격 10
           ),
           itemBuilder: (context, index) {
             return GestureDetector(
               onTap: () {
-                //
+                // 하단 슬라이드 모달 시트
                 showModalBottomSheet(
                   context: context,
                   builder: (context) {
@@ -97,3 +98,6 @@ class _HomePageState extends State<HomePage> {
 }
 
 ```
+
+- `showModalBottomSheet` : 그리드 안에 사진을 클릭하면 하단 모달 시트가 나온다.
+- `dispose()` : TextEditingController 사용시에는 반드시 dispose 호출해줘야 메모리에서 소거됨 (최적화)
