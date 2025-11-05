@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIL,WIL/book_search_app/home_view_model.dart (ViewModel 상태관리 로직).md",
+                "file": "TIL,WIL/book_search_app/detail_page.dart.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "home_view_model.dart (ViewModel 상태관리 로직)"
+              "title": "detail_page.dart"
             }
           }
         ],
@@ -199,8 +199,9 @@
   },
   "active": "b880f2f17f9008f6",
   "lastOpenFiles": [
-    "TIL,WIL/book_search_app/book_repository.dart (네이버 API 연결).md",
     "TIL,WIL/book_search_app/home_view_model.dart (ViewModel 상태관리 로직).md",
+    "TIL,WIL/book_search_app/detail_page.dart.md",
+    "TIL,WIL/book_search_app/book_repository.dart (네이버 API 연결).md",
     "TIL,WIL/book_search_app/home_bottom_sheet.dart.md",
     "TIL,WIL/book_search_app/home_page.dart.md",
     "tip or anyting/Freezed.md",
@@ -238,7 +239,6 @@
     "TIL,WIL/Dart 기초 문법/클래스 - 속성 (복습).md",
     "TIL,WIL/Dart 기초 문법/컬렉션 - List, Set, Map, 열거형(enum).md",
     "tip or anyting/10월2일 강의 (동기,비동기, stream).md",
-    "TIL,WIL/알고리즘/1.md",
     "TIL,WIL/알고리즘",
     "tip or anyting",
     "TIL,WIL/Dart 기초 문법",
