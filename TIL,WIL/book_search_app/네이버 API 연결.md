@@ -1,8 +1,8 @@
 
 
-TRS79OnXRAcUT0Wn2ycH
+X-Naver-Client-Id: TRS79OnXRAcUT0Wn2ycH
 
-5AbMeIyyfd
+X-Naver-Client-Secret: 5AbMeIyyfd
 
 
 https://openapi.naver.com/v1/search/book.json?qurey=value
