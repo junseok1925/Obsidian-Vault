@@ -73,4 +73,25 @@ class BookRepository {
 - `.map()`은 **지연 실행(lazy)** 구조 → `.toList()`로 즉시 변환
 - 결과: `List<Book>` 반환
 - 실패시 `[ ]` 빈배열 반환
-- 
+
+
+## Test 코드 book_repository_test.dart
+
+```dart
+import 'package:flutter_book_search_app/data/model/repository/book_repository.dart';
+import 'package:flutter_test/flutter_test.dart';
+
+void main() {
+  test('BookRepository test', () async {
+    //
+    BookRepository bookRepository = BookRepository();
+    final books = await bookRepository.searchBooks('jun');
+
+    expect(books.isEmpty, false);
+    for (var book in books) {
+      print(book.toJson());
+    }
+  });
+}
+
+```
