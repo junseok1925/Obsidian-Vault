@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIL,WIL/book_search_app/네이버 API 연결.md",
+                "file": "TIL,WIL/book_search_app/book_repository.dart (네이버 API 연결).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "네이버 API 연결"
+              "title": "book_repository.dart (네이버 API 연결)"
             }
           }
         ],
@@ -197,10 +197,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b880f2f17f9008f6",
+  "active": "128038d9a921b4cb",
   "lastOpenFiles": [
     "TIL,WIL/book_search_app/home_bottom_sheet.dart.md",
-    "TIL,WIL/book_search_app/네이버 API 연결.md",
+    "TIL,WIL/book_search_app/book_repository.dart (네이버 API 연결).md",
     "TIL,WIL/book_search_app/home_page.dart.md",
     "tip or anyting/Freezed.md",
     "Pasted image 20251104204815.png",
