@@ -1,11 +1,12 @@
 
 
-X-Naver-Client-Id: TRS79OnXRAcUT0Wn2ycH
+네이버 개발자 센터(https://developers.naver.com/main/)
 
-X-Naver-Client-Secret: 5AbMeIyyfd
+로그인 후 Application - 애플리케이션 등록 - 사용 API :  검색, 환경 추가 : 안드로이드(앱 패키지 이름 - com.example)
 
+X-Naver-Client-Id , X-Naver-Client-Secret → 기억하기
 
+그러면 API를 요청할 수 있는 URL를 확인 할 수 있음
 https://openapi.naver.com/v1/search/book.json?qurey=value
 
-X-Naver-Client-Id: {애플리케이션 등록 시 발급받은 클라이언트 아이디 값}
-X-Naver-Client-Secret: {애플리케이션 등록 시 발급받은 클라이언트 시크릿 값}
+
