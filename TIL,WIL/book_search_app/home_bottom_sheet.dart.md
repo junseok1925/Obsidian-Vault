@@ -1,11 +1,19 @@
 ![[Pasted image 20251104204815.png]]
 
+
+
+책을 탭했을 때 하단에 뜨는 상세 요약 모달 UI
+
 ```dart
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_book_search_app/data/model/book.dart';
 import 'package:flutter_book_search_app/ui/detail/detail_page.dart';
 
 class HomeBottomSheet extends StatelessWidget {
+  final Book book;
+  HomeBottomSheet({required this.book});
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -15,16 +23,18 @@ class HomeBottomSheet extends StatelessWidget {
       child: Row(
         children: [
           Image.network(
-            'https://picsum.photos/seed/picsum/200/300',
+            book.image,
             fit: BoxFit.cover, // 이미지를 비율 유지하면서 영역에 꽉 채우되, 필요하면 잘라내라
           ),
           SizedBox(width: 20),
+          //남은 공간을 꽉 채우는 구성
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start, // 왼쪽 정렬
               children: [
                 Text(
-                  '영화 제목 부분',
+                  book.title,
+                  maxLines: 2,
                   style: TextStyle(
                     color: Colors.blueAccent,
                     fontWeight: FontWeight.bold,
@@ -32,23 +42,23 @@ class HomeBottomSheet extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  '감독',
+                  book.author,
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
                 ),
                 Text(
-                  '영화 소개 글',
+                  book.description,
+                  maxLines: 3,
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
                 ),
                 Spacer(),
                 // DetailPage로 이동
                 GestureDetector(
                   onTap: () {
-                    //
                     Navigator.push(
                       context,
                       MaterialPageRoute(
                         builder: (context) {
-                          return DetailPage();
+                          return DetailPage(book: book);
                         },
                       ),
                     );
@@ -76,6 +86,5 @@ class HomeBottomSheet extends StatelessWidget {
     );
   }
 }
-
 ```
 

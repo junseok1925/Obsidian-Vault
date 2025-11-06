@@ -5,14 +5,17 @@
 
 ```dart
 import 'package:flutter/material.dart';
+import 'package:flutter_book_search_app/ui/home/home_view_model.dart';
 import 'package:flutter_book_search_app/ui/home/widgets/home_bottom_sheet.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-class HomePage extends StatefulWidget {
+	// RiverPod에서 상태변화(ref.watch)를 사용할 수 있는 statefulWidget으로 설정
+class HomePage extends ConsumerStatefulWidget {
   @override
-  State<HomePage> createState() => _HomePageState();
+  ConsumerState<HomePage> createState() => _HomePageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _HomePageState extends ConsumerState<HomePage> {
   TextEditingController textEditingController = TextEditingController();
 
   @override
@@ -21,13 +24,18 @@ class _HomePageState extends State<HomePage> {
     textEditingController.dispose();
     super.dispose();
   }
-
+    // 홈 뷰모델의 searchBooks 메서드 호출
   void onSearch(String text) {
-    print('onSearch');
+    // HomeViewModel 인스턴스 접근
+    ref.read(homeViewModelProvider.notifier).searchBooks(text);
   }
 
   @override
   Widget build(BuildContext context) {
+  // Riverpod provider의 상태(HomeState)를 구독
+  // 상태가 변결될 때마다 UI를 자동 빌드
+    final homeState = ref.watch(homeViewModelProvider);
+
     return GestureDetector(
       onTap: () {
         FocusScope.of(context).unfocus();
@@ -71,7 +79,7 @@ class _HomePageState extends State<HomePage> {
         // 격자로 아이템을 배치
         body: GridView.builder(
           padding: EdgeInsets.all(20),
-          itemCount: 10, // 아이템 갯수
+          itemCount: homeState.books.length, // 아이템 갯수
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 3, // 한 줄에 배치할 아이템 갯수
             childAspectRatio: 3 / 4, // 아이템 가로 세로 비율
@@ -79,17 +87,19 @@ class _HomePageState extends State<HomePage> {
             mainAxisSpacing: 10, // 세로 간격 10
           ),
           itemBuilder: (context, index) {
+          // homeState.books → List<Book>형태 (즉, 책 객체들의 리스트)
+            final book = homeState.books[index];
             return GestureDetector(
               onTap: () {
-                // 하단 슬라이드 모달 시트는 따로 home_bottom_sheet.dart 에서 관리
+                // 하단 슬라이드 모달 시트
                 showModalBottomSheet(
                   context: context,
                   builder: (context) {
-                    return HomeBottomSheet();
+                    return HomeBottomSheet(book: book);
                   },
                 );
               },
-              child: Image.network('https://picsum.photos/seed/picsum/200/300'),
+              child: Image.network(book.image),
             );
           },
         ),
@@ -97,9 +107,26 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
-
-
 ```
 
 - `showModalBottomSheet` : 그리드 안에 사진을 클릭하면 하단 모달 시트가 나온다.
 - `dispose()` : TextEditingController 사용시에는 반드시 dispose 호출해줘야 메모리에서 소거됨 (최적화)
+
+
+## 전체 데이터 흐름 요약
+```csharp
+사용자 입력 → onSearch()
+             ↓
+     HomeViewModel.searchBooks()
+             ↓
+       BookRepository.searchBooks()
+             ↓
+     네이버 책 API 호출 → 결과 → Book 리스트 반환
+             ↓
+     state = HomeState(books)
+             ↓
+     ref.watch(homeViewModelProvider) → GridView 리빌드
+
+```
+
+**Riverpod 기반으로 상태를 관리하며, 검색 → API 요청 → 상태 갱신 → UI 자동 업데이트** 흐름을 가진 완전한 검색 메인 화면
