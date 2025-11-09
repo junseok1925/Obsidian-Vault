@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIL,WIL/book_search_app/Firebase Firestore 연동.md",
+                "file": "TIL,WIL/firebase_blog_app/FireStore 연동 후 데이터 가져오기.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Firebase Firestore 연동"
+              "title": "FireStore 연동 후 데이터 가져오기"
             }
           }
         ],
@@ -199,24 +199,26 @@
   },
   "active": "b880f2f17f9008f6",
   "lastOpenFiles": [
+    "TIL,WIL/firebase_blog_app/Firebase Firestore 연동.md",
+    "TIL,WIL/firebase_blog_app/FireStore 연동 후 데이터 가져오기.md",
+    "TIL,WIL/book_search_app/detail_page.dart.md",
+    "TIL,WIL/firebase_blog_app",
+    "TIL,WIL/book_search_app/book_repository.dart (네이버 API 연결).md",
+    "TIL,WIL/book_search_app/home_bottom_sheet.dart.md",
+    "TIL,WIL/book_search_app/home_page.dart.md",
+    "TIL,WIL/book_search_app/home_view_model.dart (ViewModel 상태관리 로직).md",
+    "TIL,WIL/book_search_app/무제.md",
     "Pasted image 20251109014820.png",
     "Pasted image 20251109014806.png",
     "Pasted image 20251109014641.png",
     "Pasted image 20251109014632.png",
     "Pasted image 20251109014529.png",
-    "TIL,WIL/book_search_app/detail_page.dart.md",
-    "TIL,WIL/book_search_app/Firebase Firestore 연동.md",
     "Pasted image 20251106004247.png",
-    "TIL,WIL/book_search_app/home_bottom_sheet.dart.md",
-    "TIL,WIL/book_search_app/book_repository.dart (네이버 API 연결).md",
-    "TIL,WIL/book_search_app/home_view_model.dart (ViewModel 상태관리 로직).md",
-    "TIL,WIL/book_search_app/home_page.dart.md",
     "tip or anyting/Freezed.md",
     "Pasted image 20251104204815.png",
     "Pasted image 20251104204803.png",
     "Pasted image 20251104195532.png",
     "Pasted image 20251104195512.png",
-    "Pasted image 20251104195439.png",
     "TIL,WIL/flutter 숙련/무제.md",
     "TIL,WIL/book_search_app",
     "TIL,WIL/shopping_App/트러블 슈팅.md",
@@ -238,13 +240,11 @@
     "TIL,WIL/Dart 기초 문법/객체 지향과 상속.md",
     "TIL,WIL/Dart 기초 문법/조건문.md",
     "TIL,WIL/Dart 기초 문법/반복문.md",
-    "TIL,WIL/Dart 기초 문법/클래스 - 속성 (복습).md",
     "TIL,WIL/알고리즘",
     "tip or anyting",
     "TIL,WIL/Dart 기초 문법",
     "무제 3.base",
     "무제 4.base",
-    "무제.base",
     "무제.canvas"
   ]
 }
