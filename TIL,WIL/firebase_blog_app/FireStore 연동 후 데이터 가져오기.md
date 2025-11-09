@@ -3,27 +3,35 @@
 
 ```dart
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter_firebase_blog_app/data/model/post.dart';
 
 class PostRepository {
-  Future<void> getAll() async {
+  Future<List<Post>> getAll() async {
     // 1. 파이어스토어 인스턴스 가져와서 생성
     final firestore = FirebaseFirestore.instance;
     // 2. post 컬렉션 참조 만들기
     final collectionRef = firestore.collection('posts');
     // 3. 모든 문서 가져오기
     final result = await collectionRef.get();
-	// 4. QuerySnapshot 안의 문서 목록 가져오기
+    // 4. QuerySnapshot 안의 문서 목록 가져오기
     final docs = result.docs;
-
-    for (var doc in docs) {
-      print(doc.id); // 문서 고유 번호
-      print(doc.data()); // 실제 데이터
-    }
+    
+    // Firebase에서 불러온 각 문서를 Post 객체로 바꾼다
+    // 
+    return docs.map((doc) {
+      final map = doc.data(); 
+      doc.id;
+      final newMap = {'id': doc.id, ...map}; // 문서 Id와 나머지 요소를 합쳐 newMap 생성
+      return Post.fromJson(newMap); // Post 객체로 변환
+    }).toList();
   }
 }
-
 ```
 
+- `return docs.map((doc) {…}).toList();`
+  -  `.map`은 각 문서(doc)를 순서대로 돌면서 새로운 값으로 바꾸는 함수
+  - 모든 문서를 Post 객체로 바꿈
+  - 마지막을 map의 결과물을 `List<Post>` 로 만들어 준다.
 
 # post.dart( model 클래스)
 
