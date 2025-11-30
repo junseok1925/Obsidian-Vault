@@ -34,9 +34,21 @@
               "icon": "lucide-file",
               "title": "Firebase Firestore 연동"
             }
+          },
+          {
+            "id": "5a76a68d5e7b566d",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.10.3"
+              },
+              "icon": "lucide-book-up",
+              "title": "릴리즈 노트 1.10.3"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -197,7 +209,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b880f2f17f9008f6",
+  "active": "5a76a68d5e7b566d",
   "lastOpenFiles": [
     "TIL,WIL/firebase_blog_app/FireStore 연동 후 데이터 가져오기.md",
     "TIL,WIL/firebase_blog_app/Firebase Firestore 연동.md",
