@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIL,WIL/무한 스크롤, pull_to_refresh.md",
+                "file": "TIL,WIL/GetX 발표 자료.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "무한 스크롤, pull_to_refresh"
+              "title": "GetX 발표 자료"
             }
           }
         ],
@@ -214,6 +214,7 @@
   "active": "5a76a68d5e7b566d",
   "lastOpenFiles": [
     "TIL,WIL/무한 스크롤, pull_to_refresh.md",
+    "TIL,WIL/GetX 발표 자료.md",
     "TIL,WIL/firebase_blog_app/FireStore 연동 후 데이터 가져오기.md",
     "TIL,WIL/firebase_blog_app/Firebase Firestore 연동.md",
     "TIL,WIL/book_search_app/detail_page.dart.md",
@@ -253,7 +254,6 @@
     "GEOMEX 교육.md",
     "옵시디언 github 연동 테스트 페이지.md",
     "TIL,WIL/Dart 기초 문법/객체 지향과 상속.md",
-    "TIL,WIL/Dart 기초 문법/조건문.md",
     "TIL,WIL/알고리즘",
     "tip or anyting",
     "TIL,WIL/Dart 기초 문법",
