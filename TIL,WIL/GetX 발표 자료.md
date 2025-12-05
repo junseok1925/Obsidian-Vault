@@ -465,31 +465,3 @@ Riverpod은 구조적으로 안전하고 테스트성이 좋지만,
 StreamBuilder를 사용할 필요도 없고,  
 리스트 전체가 아니라 변경된 ‘그 한 행’만 다시 그려서  
 스크롤 중에도 부드러운 성능을 유지합니다.
-
-
-
-```dart
-class TradeController extends GetxController {
-  // 사용자가 입력하는 주문 수량 (예: 0.5 BTC)
-  var amount = 0.0.obs;
-  // 실시간으로 변동하는 현재가 (WebSocket으로 들어오는 값)
-  var currentPrice = 0.0.obs;
-  // amount × currentPrice 로 계산된 총 주문 금액
-  var total = 0.0.obs;
-  // “주문 가능한지 여부”를 나타내는 Boolean
-  // 잔고가 total보다 많으면 true, 부족하면 false
-  var isValid = false.obs;
-  // 지갑(잔고) 컨트롤러 가져오기
-  // 주문 금액과 비교하기 위해 필요
-  final wallet = Get.find<WalletController>();
-  // 핵심 계산 함수: 사용자가 amount를 입력하거나 가격이 변할 때마다 호출
-  void calculate() {
-    // 총 주문 금액 = 수량 × 현재가
-    total.value = amount.value * currentPrice.value;
-    // 주문 가능 여부: 잔고 >= 총 주문 금액?
-    isValid.value = wallet.balance.value >= total.value;
-    // 이 계산이 끝나는 즉시 Obx를 통해 UI도 자동 업데이트된다
-  }
-}
-
-```
