@@ -417,3 +417,49 @@
     
 
 계속 진행할까? 어떤 부분부터 구현을 시작할지 말해줘.
+
+
+
+
+authorId
+"testUser1"
+
+(string)
+
+commentCount
+999
+
+(number)
+
+content
+"오늘 눈 오지게 옴...;;;"
+
+(string)
+
+createdAt
+2025년 12월 7일 AM 2시 47분 5초 UTC+9
+
+(timestamp)
+
+id
+"postId"
+
+(string)
+
+likeCount
+999
+
+(number)
+
+mediaType
+"image"
+
+(string)
+
+mediaUrl
+"https://picsum.photos/800/1200"
+
+(string)
+
+nickname
+"강준석"
