@@ -62,9 +62,21 @@
               "icon": "lucide-file",
               "title": "TikTok 스타일의 이미지, 숏폼 피드SNS"
             }
+          },
+          {
+            "id": "2ab900b8b80b653e",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.10.6"
+              },
+              "icon": "lucide-book-up",
+              "title": "릴리즈 노트 1.10.6"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -225,7 +237,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6ec3d7e1135cefdf",
+  "active": "2ab900b8b80b653e",
   "lastOpenFiles": [
     "getX 대본.md",
     "TIL,WIL/TikTok 스타일의 이미지, 숏폼 피드SNS.md",
