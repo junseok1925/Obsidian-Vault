@@ -79,3 +79,36 @@ class StockPage extends StatelessWidget {
 ```
 
 
+## RiverPod 버전
+
+```dart
+// 1. 상태(State) 정의 및 Notifier 생성
+class StockPriceNotifier extends StateNotifier<int> {
+  StockPriceNotifier() : super(50000) {
+    _startStream();
+  }
+
+  void _startStream() {
+    Stream.periodic(Duration(seconds: 1), (i) => 50000 + (i * 100))
+        .listen((newPrice) => state = newPrice); // state를 직접 변경 (불변성 교체)
+  }
+}
+
+// 2. Provider 선언 (전역)
+final stockPriceProvider = StateNotifierProvider<StockPriceNotifier, int>((ref) {
+  return StockPriceNotifier();
+});
+
+// 3. UI (ConsumerWidget 사용)
+class StockPageRiverpod extends ConsumerWidget {
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    // ref.watch를 통해 상태 감시
+    final price = ref.watch(stockPriceProvider);
+
+    return Scaffold(
+      body: Center(child: Text("$price 원")),
+    );
+  }
+}
+```
