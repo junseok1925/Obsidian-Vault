@@ -45,70 +45,9 @@
 
 
 
-## 실시간 시세 업데이트를 GetX의 obs, stream을 활용해 구현 예시
+# 실시간 시세 업데이트 구현 예시
 
+### controller
 ```dart
-class StockPage extends StatelessWidget {
-  // 컨트롤러 주입
-  final controller = Get.put(StockController());
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text("실시간 시세")),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text("삼성전자 현재가", style: TextStyle(fontSize: 20)),
-            // 4. Obx가 변수를 감시하다가 값이 바뀌면 여기만 리렌더링함
-            Obx(() => Text(
-              "${controller.stockPrice.value} 원",
-              style: TextStyle(
-                fontSize: 40, 
-                fontWeight: FontWeight.bold,
-                color: Colors.red,
-              ),
-            )),
-          ],
-        ),
-      ),
-    );
-  }
-}
-```
-
-
-## RiverPod 버전
-
-```dart
-// 1. 상태(State) 정의 및 Notifier 생성
-class StockPriceNotifier extends StateNotifier<int> {
-  StockPriceNotifier() : super(50000) {
-    _startStream();
-  }
-
-  void _startStream() {
-    Stream.periodic(Duration(seconds: 1), (i) => 50000 + (i * 100))
-        .listen((newPrice) => state = newPrice); // state를 직접 변경 (불변성 교체)
-  }
-}
-
-// 2. Provider 선언 (전역)
-final stockPriceProvider = StateNotifierProvider<StockPriceNotifier, int>((ref) {
-  return StockPriceNotifier();
-});
-
-// 3. UI (ConsumerWidget 사용)
-class StockPageRiverpod extends ConsumerWidget {
-  @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    // ref.watch를 통해 상태 감시
-    final price = ref.watch(stockPriceProvider);
-
-    return Scaffold(
-      body: Center(child: Text("$price 원")),
-    );
-  }
-}
 ```
