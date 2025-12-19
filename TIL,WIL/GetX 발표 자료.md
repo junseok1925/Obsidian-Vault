@@ -23,24 +23,27 @@
 주식 거래 앱은 '돈'이 오가는 서비스이므로 GetX 사용 시 다음 사항을 반드시 고려해야 합니다.
 
 - **상태 추적의 어려움:** GetX는 어디서든 상태를 바꿀 수 있는 '전역적' 성격이 강합니다. 대규모 프로젝트에서 "어디서 내 잔고 데이터가 수정됐지?"를 추적할 때 BLoC처럼 엄격한 패턴보다 디버깅이 힘들 수 있습니다.
+  
+	- GetX가 디버깅이 힘든 이유는 아무 데서나 `controller.price.value = 0;` 처럼 값을 바꿀 수 있기 때문입니다. 이를 방지하기 위해 **캡슐화**를 적용해야 한다.
+	  
+	- 외부에서 직접 값을 수정하지 못하도록 변수는 `private(_)`으로 만들고, 수정은 반드시 함수(Method)를 통해서만 하게 만등다.
     
 - **메모리 오염:** 주식 앱은 오래 켜두는 경우가 많습니다. 컨트롤러가 적절히 `delete` 되지 않고 메모리에 쌓이면 앱이 무거워질 수 있으므로, GetX의 생명주기(`onInit`, `onClose`) 관리를 철저히 해야 합니다.
-    
+
+```dart
+class StockController extends GetxController {
+  StreamSubscription? _priceSubscription;
+
+  @override
+  void onClose() {
+    _priceSubscription?.cancel(); // 소켓 구독 해제 필수
+    print("메모리에서 StockController 제거됨");
+    super.onClose();
+  }
+}
+```
 
 ---
-
-## 3. 주식 앱을 위한 GetX 설계 전략
-
-
-### 추천 구조: 계층화 (Layering)
-
-| **계층**         | **역할**               | **GetX 활용**                     |
-| -------------- | -------------------- | ------------------------------- |
-| **Data Layer** | API 통신, WebSocket 연결 | `GetConnect` 또는 `Dio` 사용        |
-| **Controller** | 비즈니스 로직 (매수/매도 계산)   | `GetxController`에서 `.obs` 변수 관리 |
-| **View**       | UI 렌더링               | `Obx`를 사용해 시세 실시간 업데이트          |
-
-
 
 # 실시간 시세 업데이트 구현 예시
 
@@ -149,14 +152,55 @@ class BlocView extends StatelessWidget {
 
 ## 1. GetX가 Riverpod & BLoC보다 좋은 점 (생산성 측면)
 
-GetX의 철학은 **"왜 굳이 빨대를 꽂거나 파이프라인 끝에서 기다려야 해? 그냥 가서 변수 가져오면 안 돼?"**입니다.
+GetX의 철학은 **"왜 굳이 빨대를 꽂거나 파이프라인 끝에서 기다려야 해? 그냥 가서 변수 가져오면 안 돼?”** 임
 - **극강의 단순함 (No Boilerplate):**
     - **Riverpod/BLoC:** 데이터를 쓰려면 `ref`를 전달받기 위해 `ConsumerWidget`으로 바꾸거나, `BlocBuilder`로 감싸야 합니다.
     - **GetX:** 그냥 `controller.price.value`라고 쓰면 끝입니다. 위젯의 형태를 바꿀 필요가 거의 없습니다.
         
 - **컨텍스트(Context) 독립성:**
     - 가장 큰 장점입니다. 주식 거래 중 에러가 났을 때 알림창(SnackBar)을 띄우려면 BLoC은 `context`가 있는 곳까지 이벤트를 전달해야 하지만, GetX는 로직 중간에 `Get.snackbar()` 한 줄이면 끝납니다.
-        
+ **bloc**
+```dart
+// 1. 비즈니스 로직 (Bloc)
+if (balance < orderAmount) {
+  // 직접 스낵바를 못 띄우고, 'ErrorState'를 스트림에 흘려보냄
+  emit(OrderError("잔고가 부족합니다.")); 
+}
+
+// 2. UI (View)
+BlocListener<OrderBloc, OrderState>(
+  listener: (context, state) {
+    if (state is OrderError) {
+      // 반드시 'context'가 있는 이곳(UI)에서만 띄울 수 있음
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(state.message)),
+      );
+    }
+  },
+  child: OrderButton(),
+)
+```       
+
+- **GetX**
+```dart
+// 비즈니스 로직 (Controller)
+void placeOrder() {
+  if (balance < orderAmount) {
+    // UI 코드를 기다릴 필요 없이 로직 중간에 바로 실행
+    Get.snackbar(
+      "주문 실패", 
+      "잔고가 부족합니다.",
+      snackPosition: SnackPosition.BOTTOM,
+      backgroundColor: Colors.red,
+      colorText: Colors.white,
+    );
+    return; // 주문 중단
+  }
+  // 성공 로직 계속...
+}
+```
+
+
 - **학습 비용 0에 수렴:**
     - Riverpod의 `ref`, `ProviderScope`, BLoC의 `Stream`, `Sink`, `Event` 개념은 입문자에게 벽입니다. GetX는 그냥 **"변수 바꾸면 화면이 바뀐다"**는 자바스크립트나 일반적인 프로그래밍 상식과 똑같이 움직입니다.
 
