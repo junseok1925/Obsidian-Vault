@@ -87,25 +87,3 @@ class ViewByObx extends StatelessWidget {
   }
 }
 ```
-
-### 2. Getx 방식 (초기화와 동시에 사용)
-obx와 비슷하지만 컨트롤러 주입과 UI 바인딩을 한 번에 할 때 유리
-- 장점 : 별도의 Get.find 나 Get.put 없이 위젯 자체에서 컨트롤러 접근 가능
-- 특징 init 인자를 통해 컨트롤러를 생성할 수 있음
-
-```dart
-class ViewByGetX extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return GetX<StockController>(
-      init: StockController(), // 여기서 바로 생성 가능
-      builder: (controller) {
-        return Text(
-          "실시간 가격: ${controller.price.value}",
-          style: TextStyle(color: Colors.red),
-        );
-      },
-    );
-  }
-}
-```
