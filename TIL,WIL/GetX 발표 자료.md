@@ -78,7 +78,12 @@ class GetxView extends StatelessWidget {
 ```
 
 ### 2. RiverPod 
-Riverpod은 `Provider`를 통해 데이터를 외부로 노출하고, UI에서는 `ref`를 사용해 이를 구독합니다.
+
+Riverpod에서 데이터는 Provider라는 전역적인 상자에 담겨 있다. UI(Widget)는 `ref`라는 '빨대'를 꽂아서 그 상자 안의 내용물을 실시간으로 지켜본다.
+
+- **동작 원리:** * `ref.watch`를 호출하면 위젯이 특정 Provider를 **구독(Subscribe)**하게 됩니다.
+    - 상자 안의 데이터가 바뀌면, `ref.watch`를 쓰고 있는 위젯에게 "**야, 내용물 바뀌었다. 너 다시 그려라**"라고 신호를 보냅니다.
+- **비유:** 유튜브 구독과 같다. 내가 구독 버튼(`ref.watch`)을 눌러놓으면, 유튜버(Provider)가 새 영상을 올릴 때마다 내 피드(UI)에 자동으로 뜬다
 ```dart
 // Provider & Notifier
 final stockProvider = StateNotifierProvider<StockNotifier, int>((ref) => StockNotifier());
@@ -105,6 +110,11 @@ class RiverpodView extends ConsumerWidget { // ConsumerWidget 상속
 
 
 ### 3. Bloc 
+BLoC은 데이터를 직접 꺼내오는 느낌보다는, 데이터가 흐르는 **'파이프라인'** 끝에 서서 기다리는 방식입니다.
+- **동작 원리:** * BLoC은 내부적으로 `Stream`을 사용한다.
+    - `BlocBuilder`라는 위젯이 파이프라인의 출구 역할을 한다.
+    - 새로운 데이터(State)가 파이프라인을 타고 내려오면, `builder` 함수가 그 값을 인자로 받아(`state`) UI를 렌더링한다.
+- **비유:** **'회전초밥 접시'** 와 같다.. 나는 자리에 가만히 앉아 있고(`BlocBuilder`), 주방장(BLoC)이 만든 초밥(State)이 레일을 타고 내 앞까지 오면 그걸 받아서 먹는(UI 렌더링) 방식.
 
 ```dart
 // Events & Bloc
