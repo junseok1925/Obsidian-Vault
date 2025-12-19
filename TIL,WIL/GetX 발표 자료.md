@@ -47,41 +47,91 @@
 
 # 실시간 시세 업데이트 구현 예시
 
-### controller
-```dart
-import 'package:get/get.dart';
-import 'dart:async';
-
-class StockController extends GetxController {
-  // .obs를 붙여 반응형 변수로 만등
-  var price = 72000.obs; 
-
-  void startUpdates() {
-    // 1초마다 가격이 100원씩 오르는 시뮬
-    Timer.periodic(Duration(seconds: 1), (timer) {
-      price.value += 100;
-    });
-  }
-}
-```
-
-### 1. Obx 방식 (가장 보편적)
+### 1. GetX Obx 방식 (가장 보편적)
 가장 간결, 그냥 변수를 갖다 쓰기만 하면 됨
 - 장점 : 코드가 가장 간결, 직관
 - 특징 : obx 위젯 안에서 사용된 obs 변수가 변할 때만 해당 위젯이 업뎃 됨
 ```dart
-class ViewByObx extends StatelessWidget {
-  // 이미 생성된 컨트롤러 가져오기
-  final controller = Get.find<StockController>();
+// Controller
+class StockGetxController extends GetxController {
+  var price = 70000.obs; // 관찰 가능한 변수
+
+  void startStream() {
+    Stream.periodic(Duration(seconds: 1), (i) => 70000 + (i * 100))
+        .listen((val) => price.value = val);
+  }
+}
+
+// View
+class GetxView extends StatelessWidget {
+  final controller = Get.put(StockGetxController()); // 주입
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Obx(() => Text(
-          "현재가: ${controller.price.value}원", // 변수만 적으면 끝 간결, 직관적
-          style: TextStyle(fontSize: 25),
-        )),
+        child: Obx(() => Text("${controller.price.value}원")), // 반응형 출력
+      ),
+    );
+  }
+}
+```
+
+### 2. RiverPod 
+Riverpod은 `Provider`를 통해 데이터를 외부로 노출하고, UI에서는 `ref`를 사용해 이를 구독합니다.
+```dart
+// Provider & Notifier
+final stockProvider = StateNotifierProvider<StockNotifier, int>((ref) => StockNotifier());
+
+class StockNotifier extends StateNotifier<int> {
+  StockNotifier() : super(70000) {
+    Stream.periodic(Duration(seconds: 1), (i) => 70000 + (i * 100))
+        .listen((val) => state = val); // state 교체
+  }
+}
+
+// View
+class RiverpodView extends ConsumerWidget { // ConsumerWidget 상속
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final price = ref.watch(stockProvider); // 상태 구독
+
+    return Scaffold(
+      body: Center(child: Text("$price원")),
+    );
+  }
+}
+```
+
+
+### 3. Bloc 
+
+```dart
+// Events & Bloc
+abstract class StockEvent {}
+class PriceChanged extends StockEvent { final int price; PriceChanged(this.price); }
+
+class StockBloc extends Bloc<StockEvent, int> {
+  StockBloc() : super(70000) {
+    on<PriceChanged>((event, emit) => emit(event.price));
+    
+    Stream.periodic(Duration(seconds: 1), (i) => 70000 + (i * 100))
+        .listen((val) => add(PriceChanged(val))); // 이벤트 추가
+  }
+}
+
+// View
+class BlocView extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return BlocProvider(
+      create: (_) => StockBloc(),
+      child: Scaffold(
+        body: Center(
+          child: BlocBuilder<StockBloc, int>( // 상태 변화 감지
+            builder: (context, price) => Text("$price원"),
+          ),
+        ),
       ),
     );
   }
