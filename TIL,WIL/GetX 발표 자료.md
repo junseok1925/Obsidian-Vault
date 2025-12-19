@@ -49,5 +49,63 @@
 
 ### controller
 ```dart
+import 'package:get/get.dart';
+import 'dart:async';
 
+class StockController extends GetxController {
+  // .obs를 붙여 반응형 변수로 만등
+  var price = 72000.obs; 
+
+  void startUpdates() {
+    // 1초마다 가격이 100원씩 오르는 시뮬
+    Timer.periodic(Duration(seconds: 1), (timer) {
+      price.value += 100;
+    });
+  }
+}
+```
+
+### 1. Obx 방식 (가장 보편적)
+가장 간결, 그냥 변수를 갖다 쓰기만 하면 됨
+- 장점 : 코드가 가장 간결, 직관
+- 특징 : obx 위젯 안에서 사용된 obs 변수가 변할 때만 해당 위젯이 업뎃 됨
+```dart
+class ViewByObx extends StatelessWidget {
+  // 이미 생성된 컨트롤러 가져오기
+  final controller = Get.find<StockController>();
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Obx(() => Text(
+          "현재가: ${controller.price.value}원", // 변수만 적으면 끝 간결, 직관적
+          style: TextStyle(fontSize: 25),
+        )),
+      ),
+    );
+  }
+}
+```
+
+### 2. Getx 방식 (초기화와 동시에 사용)
+obx와 비슷하지만 컨트롤러 주입과 UI 바인딩을 한 번에 할 때 유리
+- 장점 : 별도의 Get.find 나 Get.put 없이 위젯 자체에서 컨트롤러 접근 가능
+- 특징 init 인자를 통해 컨트롤러를 생성할 수 있음
+
+```dart
+class ViewByGetX extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return GetX<StockController>(
+      init: StockController(), // 여기서 바로 생성 가능
+      builder: (controller) {
+        return Text(
+          "실시간 가격: ${controller.price.value}",
+          style: TextStyle(color: Colors.red),
+        );
+      },
+    );
+  }
+}
 ```
