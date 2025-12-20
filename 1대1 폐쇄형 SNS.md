@@ -366,25 +366,27 @@ Firestore는 `컬렉션(폴더) > 문서(파일) > 필드(데이터)` 구조입�
 
 
 
+createdAt2025년 12월 21일 AM 1시 38분 45초 UTC+9
 
-OS"ios_test_보류"
 
-(string)
+emotionTag"https://firebasestorage.googleapis.com/v0/b/project-cupier-app.firebasestorage.app/o/emotion%2F%F0%9F%98%A5%20Sad%20But%20Relieved%20Face%20Left.png?alt=media&token=4d749021-08c1-4bd0-928f-94d490ce5fb9"
 
-activeRoomId"ZiarlTTbW7i47V0GAhQI"
+imageUrl"https://picsum.photos/200/200"
 
-(string)
+roomId"ZiarlTTbW7i47V0GAhQI"
 
-createdAt2025년 12월 21일 AM 1시 27분 10초 UTC+9
+senderId"uidA"
 
-(timestamp)
+visionAnalysis
 
-fcmToken"token_test_123"
+label
 
-(string)
+0"subway"
 
-nickname"태유니엉뜨"
+1"sad"
 
-(string)
+2"tired"
 
-pairCode"A1b2c3"
+mainColor"#a9a9a9"
+
+widgetText"출근 중, 지하철 피곤해..."
