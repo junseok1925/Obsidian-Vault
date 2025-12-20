@@ -371,7 +371,7 @@ OS"ios_test_보류"
 
 (string)
 
-activeRoomId"room_test_PaIrCoDe"
+activeRoomId"ZiarlTTbW7i47V0GAhQI"
 
 (string)
 
@@ -388,6 +388,3 @@ nickname"태유니엉뜨"
 (string)
 
 pairCode"A1b2c3"
-
-(string)
-
