@@ -81,12 +81,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIL,WIL/GetX 발표 자료.md",
+                "file": "1대1 폐쇄형 SNS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GetX 발표 자료"
+              "title": "1대1 폐쇄형 SNS"
             }
           }
         ],
@@ -147,8 +147,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 333.5024719238281,
-    "collapsed": true
+    "width": 333.5024719238281
   },
   "right": {
     "id": "7afe4a8a56070175",
@@ -255,9 +254,9 @@
   "active": "1f1464e073da3a90",
   "lastOpenFiles": [
     "TIL,WIL/TikTok 스타일의 이미지, 숏폼 피드SNS.md",
+    "TIL,WIL/GetX 발표 자료.md",
     "1대1 폐쇄형 SNS.md",
     "getX 대본.md",
-    "TIL,WIL/GetX 발표 자료.md",
     "무제.md",
     "무제",
     "TIL,WIL/무한 스크롤, pull_to_refresh.md",
