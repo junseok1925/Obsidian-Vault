@@ -362,3 +362,32 @@ Firestore는 `컬렉션(폴더) > 문서(파일) > 필드(데이터)` 구조입�
 컬렉션을 만드셨다면, 이제 **"내 페어링 코드를 생성하고 상대방 코드를 입력하면 `rooms` 문서를 만들어주는 Cloud Function"** 코드를 짤 차례입니다.
 
 **페어링 로직(TypeScript 코드)을 먼저 짜드릴까요, 아니면 Flutter 앱에서 데이터를 넣는 법부터 알아볼까요?**
+
+
+
+
+
+OS"ios_test_보류"
+
+(string)
+
+activeRoomId"room_test_PaIrCoDe"
+
+(string)
+
+createdAt2025년 12월 21일 AM 1시 27분 10초 UTC+9
+
+(timestamp)
+
+fcmToken"token_test_123"
+
+(string)
+
+nickname"태유니엉뜨"
+
+(string)
+
+pairCode"A1b2c3"
+
+(string)
+
