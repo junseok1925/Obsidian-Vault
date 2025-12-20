@@ -366,27 +366,66 @@ Firestore는 `컬렉션(폴더) > 문서(파일) > 필드(데이터)` 구조입�
 
 
 
-createdAt2025년 12월 21일 AM 1시 38분 45초 UTC+9
+네, 요청하신 대로 각 필드가 **우리 앱 서비스 내에서 구체적으로 어떤 기능적 역할(Role)**을 담당하는지 핵심 위주로 정리해 드립니다.
 
+이 내용을 알고 계시면 나중에 Flutter 화면을 그리거나 서버 로직을 짤 때 "아, 이 데이터를 여기서 쓰려고 만들었지!" 하고 바로 감이 오실 거예요.
 
-emotionTag"https://firebasestorage.googleapis.com/v0/b/project-cupier-app.firebasestorage.app/o/emotion%2F%F0%9F%98%A5%20Sad%20But%20Relieved%20Face%20Left.png?alt=media&token=4d749021-08c1-4bd0-928f-94d490ce5fb9"
+---
+네, 요청하신 대로 **데이터 타입(Type)**까지 포함하여 완벽하게 정리해 드립니다.
 
-imageUrl"https://picsum.photos/200/200"
+이 표는 나중에 Flutter에서 **클래스(Model)**를 설계하거나, Firestore **보안 규칙(Security Rules)**을 작성할 때 그대로 복사해서 사용하시면 됩니다.
 
-roomId"ZiarlTTbW7i47V0GAhQI"
+---
 
-senderId"uidA"
+### 1. `users` 컬렉션 (사용자 계정 관리)
 
-visionAnalysis
+각 유저의 고유 정보와 서비스 상태를 정의합니다.
 
-label
+|**필드명**|**데이터 유형 (Type)**|**역할 (Role)**|**활용 예시**|
+|---|---|---|---|
+|**`uid`**|**String**|고유 식별자|유저 고유 ID (Auth UID)|
+|**`nickname`**|**String**|표시 이름|앱 내 노출 닉네임|
+|**`email`**|**String**|계정 주소|로그인 및 식별용 이메일|
+|**`activeRoomId`**|**String**|방 진입 키|소속된 방의 ID (Null이면 미연결)|
+|**`pairCode`**|**String**|초대 코드|상대방 연결용 6자리 코드|
+|**`provider`**|**String**|가입 경로|`google`, `email` 등 가입 수단|
+|**`status`**|**String**|계정 상태|`active`, `pending`, `deleted`|
+|**`fcmToken`**|**String**|푸시 주소|알림 전송용 토큰|
+|**`pushEnabled`**|**Boolean**|알림 설정|알림 수신 동의 여부 (`true`/`false`)|
+|**`os`**|**String**|기기 환경|`ios`, `android` 구분|
+|**`createdAt`**|**Timestamp**|생성 시점|계정 생성 일시|
 
-0"subway"
+---
 
-1"sad"
+### 2. `rooms` 컬렉션 (커플 공유 공간)
 
-2"tired"
+위젯 화면에서 가장 먼저 읽어오는 '대표 데이터'입니다.
 
-mainColor"#a9a9a9"
+|**필드명**|**데이터 유형 (Type)**|**역할 (Role)**|**활용 예시**|
+|---|---|---|---|
+|**`member`**|**Array (String)**|출입 명부|`["uidA", "uidB"]` 권한 확인|
+|**`startDate`**|**Timestamp**|기념일 기준|사귀기 시작한 날 (D-Day 계산)|
+|**`lastPhotoUrl`**|**String**|위젯 이미지|위젯에 표시할 최신 사진 URL|
+|**`lastWidgetText`**|**String**|위젯 문구|위젯에 표시할 메인 멘트|
+|**`lastPhotoAt`**|**Timestamp**|시간 정보|마지막 사진이 올라온 시각|
+|**`createdAt`**|**Timestamp**|생성 시점|방이 개설된 일시|
 
-widgetText"출근 중, 지하철 피곤해..."
+---
+
+### 3. `photos` 하위 컬렉션 (사진 및 AI 분석 상세)
+
+모든 사진 히스토리와 AI가 가공한 데이터를 담고 있습니다.
+
+> **경로:** `/rooms/{roomId}/photos/{photoId}`
+
+|**필드명**|**데이터 유형 (Type)**|**역할 (Role)**|**활용 예시**|
+|---|---|---|---|
+|**`senderId`**|**String**|작성자 식별|사진을 보낸 사람의 UID|
+|**`imageUrl`**|**String**|이미지 주소|스토리지 다운로드 링크 (표시용)|
+|**`storagePath`**|**String**|파일 경로|스토리지 내 실제 경로 (삭제/관리용)|
+|**`emotionTag`**|**String**|감정 아이콘|선택한 감정 이미지 URL 또는 이름|
+|**`mainColor`**|**String**|UI 테마 색상|`#FFFFFF` 등 헥사코드 (UI 자동 색상)|
+|**`widgetText`**|**String**|사진 멘트|사진과 함께 기록된 짧은 문구|
+|**`createdAt`**|**Timestamp**|생성 시점|사진 업로드 일시|
+|**`visionAnalysis`**|**Map**|AI 분석 그룹|AI가 분석한 정보의 묶음|
+|└ **`label`**|**Array (String)**|객체 인식 결과|`["sea", "night", "outside"]`|
